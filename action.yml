@@ -1,0 +1,24 @@
+name: "Schemar"
+description: "Validate structured data on a website"
+author: "johnnyreilly"
+
+# Add your action's branding here. This will appear on the GitHub Marketplace.
+branding:
+  icon: "check-square"
+  color: "green"
+
+# Define your inputs here.
+inputs:
+  url:
+    description: "URL to validate"
+    required: true
+    default: ""
+
+# Define your outputs here.
+outputs:
+  time:
+    description: "Your output description here"
+
+runs:
+  using: node20
+  main: dist/index.js

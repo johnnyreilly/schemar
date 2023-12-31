@@ -1,0 +1,238 @@
+{
+	"url": "https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/",
+	"isRendered": true,
+	"tripleGroups": [
+		{
+			"ownerSet": {},
+			"nodes": [
+				{
+					"types": [
+						{
+							"pred": "itemtype",
+							"value": "BlogPosting",
+							"errors": [],
+							"begin": 16776,
+							"end": 16789
+						}
+					],
+					"typeGroup": "BlogPosting",
+					"idProperty": {
+						"pred": "urn:spore:url",
+						"value": "https://docusaurus.io/blog/releases/2.4",
+						"errors": [],
+						"begin": 16796,
+						"end": 16837
+					},
+					"errors": [],
+					"properties": [
+						{
+							"pred": "mainEntityOfPage",
+							"value": "https://docusaurus.io/blog/releases/2.4",
+							"errors": [],
+							"begin": 16857,
+							"end": 16898
+						},
+						{
+							"pred": "url",
+							"value": "https://docusaurus.io/blog/releases/2.4",
+							"errors": [],
+							"begin": 16905,
+							"end": 16946
+						},
+						{
+							"pred": "headline",
+							"value": "Docusaurus 2.4",
+							"errors": [],
+							"begin": 16958,
+							"end": 16974
+						},
+						{
+							"pred": "name",
+							"value": "Docusaurus 2.4",
+							"errors": [],
+							"begin": 16982,
+							"end": 16998
+						},
+						{
+							"pred": "description",
+							"value": "We are happy to announce Docusaurus 2.4.",
+							"errors": [],
+							"begin": 17013,
+							"end": 17055
+						},
+						{
+							"pred": "datePublished",
+							"value": "2023-03-23T00:00:00+00:00",
+							"errors": [],
+							"begin": 17072,
+							"end": 17098
+						}
+					],
+					"nodeProperties": [
+						{
+							"pred": "author",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "Person",
+										"errors": [],
+										"begin": 17117,
+										"end": 17125
+									}
+								],
+								"typeGroup": "Person",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "name",
+										"value": "Sébastien Lorber",
+										"errors": [],
+										"begin": 17133,
+										"end": 17152
+									},
+									{
+										"pred": "description",
+										"value": "Docusaurus maintainer, This Week In React editor",
+										"errors": [],
+										"begin": 17167,
+										"end": 17217
+									},
+									{
+										"pred": "url",
+										"value": "https://thisweekinreact.com/",
+										"errors": [],
+										"begin": 17224,
+										"end": 17253
+									},
+									{
+										"pred": "email",
+										"value": "sebastien@thisweekinreact.com",
+										"errors": [],
+										"begin": 17262,
+										"end": 17293
+									},
+									{
+										"pred": "image",
+										"value": "https://github.com/slorber.png",
+										"errors": [],
+										"begin": 17302,
+										"end": 17334
+									}
+								],
+								"nodeProperties": [],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 17108,
+							"end": 17335
+						},
+						{
+							"pred": "image",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "ImageObject",
+										"errors": [],
+										"begin": 17353,
+										"end": 17366
+									}
+								],
+								"typeGroup": "ImageObject",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://docusaurus.io/assets/images/social-card-3239a62bb56c9529ff255bc2c72e94f6.png",
+									"errors": [],
+									"begin": 17373,
+									"end": 17459
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "url",
+										"value": "https://docusaurus.io/assets/images/social-card-3239a62bb56c9529ff255bc2c72e94f6.png",
+										"errors": [],
+										"begin": 17466,
+										"end": 17552
+									},
+									{
+										"pred": "contentUrl",
+										"value": "https://docusaurus.io/assets/images/social-card-3239a62bb56c9529ff255bc2c72e94f6.png",
+										"errors": [],
+										"begin": 17566,
+										"end": 17652
+									},
+									{
+										"pred": "caption",
+										"value": "title image for the blog post: Docusaurus 2.4",
+										"errors": [],
+										"begin": 17663,
+										"end": 17710
+									}
+								],
+								"nodeProperties": [],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 17344,
+							"end": 17711
+						},
+						{
+							"pred": "isPartOf",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "Blog",
+										"errors": [],
+										"begin": 17746,
+										"end": 17752
+									}
+								],
+								"typeGroup": "Blog",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://docusaurus.io/blog",
+									"errors": [],
+									"begin": 17759,
+									"end": 17787
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "name",
+										"value": "Docusaurus blog",
+										"errors": [],
+										"begin": 17795,
+										"end": 17812
+									}
+								],
+								"nodeProperties": [],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 17737,
+							"end": 17813
+						}
+					],
+					"numErrors": 0,
+					"numWarnings": 0
+				}
+			],
+			"numNodesWithError": 0,
+			"numNodesWithWarning": 0,
+			"numErrors": 0,
+			"numWarnings": 0,
+			"type": "BlogPosting"
+		}
+	],
+	"html": "",
+	"numObjects": 1,
+	"errors": [],
+	"totalNumErrors": 0,
+	"totalNumWarnings": 0
+}

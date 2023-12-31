@@ -7,7 +7,6 @@
 	<a href="https://github.com/johnnyreilly/schemar/blob/main/LICENSE.md" target="_blank"><img alt="License: MIT" src="https://img.shields.io/github/license/johnnyreilly/schemar?color=21bb42"></a>
 	<img alt="Style: Prettier" src="https://img.shields.io/badge/style-prettier-21bb42.svg" />
 	<img alt="TypeScript: Strict" src="https://img.shields.io/badge/typescript-strict-21bb42.svg" />
-	<img alt="npm package version" src="https://img.shields.io/npm/v/schemar?color=21bb42" />
 </p>
 
 ## Usage
@@ -21,6 +20,24 @@ import { greet } from "schemar";
 
 greet("Hello, world! 💖");
 ```
+
+## Development
+
+To develop this GitHub Action, you'll need to install the dependencies:
+
+```shell
+pnpm i
+```
+
+To run the action locally you can either use the `debug` script:
+
+```shell
+pnpm run debug
+```
+
+Or debug in VS Code using the `Debug Action` launch configuration.
+
+Whichever you use, you configure inputs using the [.env](./.env) file.
 
 <!-- You can remove this notice if you don't want it 🙂 no worries! -->
 
