@@ -342,10 +342,10 @@ export declare const validationResultSchema: z.ZodObject<{
     totalNumErrors: z.ZodNumber;
     totalNumWarnings: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
-    errors: unknown[];
     url: string;
     isRendered: boolean;
     numObjects: number;
+    errors: unknown[];
     tripleGroups: {
         type: string;
         numErrors: number;
@@ -386,10 +386,10 @@ export declare const validationResultSchema: z.ZodObject<{
     totalNumErrors: number;
     totalNumWarnings: number;
 }, {
-    errors: unknown[];
     url: string;
     isRendered: boolean;
     numObjects: number;
+    errors: unknown[];
     tripleGroups: {
         type: string;
         numErrors: number;
