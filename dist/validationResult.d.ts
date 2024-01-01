@@ -138,10 +138,11 @@ declare const nodeSchema: z.ZodObject<{
 }>;
 type Node = z.infer<typeof nodeSchema>;
 export declare const validationResultSchema: z.ZodObject<{
-    url: z.ZodString;
+    fetchError: z.ZodOptional<z.ZodEnum<["OTHER", "NOT_FOUND"]>>;
+    url: z.ZodOptional<z.ZodString>;
     isRendered: z.ZodBoolean;
     numObjects: z.ZodNumber;
-    tripleGroups: z.ZodArray<z.ZodObject<{
+    tripleGroups: z.ZodOptional<z.ZodArray<z.ZodObject<{
         ownerSet: z.ZodUnknown;
         nodes: z.ZodArray<z.ZodObject<{
             types: z.ZodArray<z.ZodObject<{
@@ -336,17 +337,19 @@ export declare const validationResultSchema: z.ZodObject<{
         numNodesWithError: number;
         numNodesWithWarning: number;
         ownerSet?: unknown;
-    }>, "many">;
-    html: z.ZodString;
-    errors: z.ZodArray<z.ZodUnknown, "many">;
+    }>, "many">>;
+    html: z.ZodOptional<z.ZodString>;
+    errors: z.ZodOptional<z.ZodArray<z.ZodUnknown, "many">>;
     totalNumErrors: z.ZodNumber;
     totalNumWarnings: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
-    errors: unknown[];
-    url: string;
     isRendered: boolean;
     numObjects: number;
-    tripleGroups: {
+    totalNumErrors: number;
+    totalNumWarnings: number;
+    fetchError?: "OTHER" | "NOT_FOUND" | undefined;
+    url?: string | undefined;
+    tripleGroups?: {
         type: string;
         numErrors: number;
         numWarnings: number;
@@ -381,16 +384,17 @@ export declare const validationResultSchema: z.ZodObject<{
         numNodesWithError: number;
         numNodesWithWarning: number;
         ownerSet?: unknown;
-    }[];
-    html: string;
-    totalNumErrors: number;
-    totalNumWarnings: number;
+    }[] | undefined;
+    html?: string | undefined;
+    errors?: unknown[] | undefined;
 }, {
-    errors: unknown[];
-    url: string;
     isRendered: boolean;
     numObjects: number;
-    tripleGroups: {
+    totalNumErrors: number;
+    totalNumWarnings: number;
+    fetchError?: "OTHER" | "NOT_FOUND" | undefined;
+    url?: string | undefined;
+    tripleGroups?: {
         type: string;
         numErrors: number;
         numWarnings: number;
@@ -425,10 +429,9 @@ export declare const validationResultSchema: z.ZodObject<{
         numNodesWithError: number;
         numNodesWithWarning: number;
         ownerSet?: unknown;
-    }[];
-    html: string;
-    totalNumErrors: number;
-    totalNumWarnings: number;
+    }[] | undefined;
+    html?: string | undefined;
+    errors?: unknown[] | undefined;
 }>;
 export type ValidationResult = z.infer<typeof validationResultSchema>;
 export {};

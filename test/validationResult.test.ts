@@ -18,7 +18,7 @@ describe("validationResult", () => {
 
 			// test recursive structure is parsed correctly by checking a nested property
 			expect(
-				validationResult.tripleGroups[0].nodes[0].nodeProperties[0].target
+				validationResult.tripleGroups![0].nodes[0].nodeProperties[0].target
 					.typeGroup,
 			).toBe("Person");
 

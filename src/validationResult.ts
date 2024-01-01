@@ -48,13 +48,16 @@ const tripleGroupSchema = z.object({
 });
 // type TripleGroup = z.infer<typeof tripleGroupSchema>;
 
+//{"fetchError":"OTHER","isRendered":false,"numObjects":0,"totalNumErrors":0,"totalNumWarnings":0}
+//{"fetchError":"NOT_FOUND","isRendered":false,"numObjects":0,"totalNumErrors":0,"totalNumWarnings":0}
 export const validationResultSchema = z.object({
-	url: z.string(),
+	fetchError: z.enum(["OTHER", "NOT_FOUND"]).optional(),
+	url: z.string().optional(),
 	isRendered: z.boolean(),
 	numObjects: z.number(),
-	tripleGroups: tripleGroupSchema.array(),
-	html: z.string(),
-	errors: z.unknown().array(),
+	tripleGroups: tripleGroupSchema.array().optional(),
+	html: z.string().optional(),
+	errors: z.unknown().array().optional(),
 	totalNumErrors: z.number(),
 	totalNumWarnings: z.number(),
 });

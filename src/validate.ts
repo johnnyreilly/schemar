@@ -41,6 +41,12 @@ ${text}`);
 
 		const json = text.substring(text.indexOf("\n"));
 		const validationResult = validationResultSchema.parse(JSON.parse(json));
+
+		if (validationResult.fetchError) {
+			throw new Error(
+				`Received a fetchError from the validator: ${validationResult.fetchError}`,
+			);
+		}
 		return validationResult;
 	} catch (err) {
 		if (err instanceof ZodError) {
