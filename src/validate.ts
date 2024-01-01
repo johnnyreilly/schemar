@@ -26,7 +26,19 @@ export async function validateUrl(url: string): Promise<ValidationResult> {
 			body: `url=${encodeURIComponent(url)}`,
 			method: "POST",
 		});
+
+		if (!response.ok) {
+			throw new Error(`Received a ${response.statusText}`);
+		}
+
 		const text = await response.text();
+
+		if (!text.indexOf("\n")) {
+			throw new Error(`Received an unexpected response:
+
+${text}`);
+		}
+
 		const json = text.substring(text.indexOf("\n"));
 		const validationResult = validationResultSchema.parse(JSON.parse(json));
 		return validationResult;
