@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: johnnyreilly/schemar@v0.1.0
 	  	with:
-		  url: https://johnnyreilly.com
+		  urls: https://johnnyreilly.com
 
 name: Validate structured data
 
@@ -36,7 +36,7 @@ on:
 
 ## Development
 
-To develop this GitHub Action, you'll need to install the dependencies:
+To develop this GitHub Action, you'll need Node.js 20 and pnpm. Then install the dependencies:
 
 ```shell
 pnpm i

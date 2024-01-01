@@ -4,24 +4,45 @@ import {
 	processValidationResponse,
 	getValidationResponse,
 } from "./validate.js";
+import type { Result } from "./validationResult.js";
 
 export async function run(): Promise<void> {
 	try {
-		const url = core.getInput("url");
-		console.log(`Validating ${url} for structured data...`);
+		const urlsString = core.getInput("urls");
+		const urls = urlsString.split("\n").map((url) => url.trim());
 
-		const validationResult = processValidationResponse(
-			await getValidationResponse(url),
-		);
-		const processedValidationResult = processValidationResult(validationResult);
+		const results: Result[] = [];
+		for (const url of urls) {
+			console.log(`Validating ${url} for structured data...`);
 
-		core.setOutput("validationResult", validationResult);
-		core.setOutput("processedValidationResult", processedValidationResult);
+			const validationResult = processValidationResponse(
+				await getValidationResponse(url),
+			);
+			const processedValidationResult =
+				processValidationResult(validationResult);
 
-		if (processedValidationResult.success) {
-			console.log(processedValidationResult.resultText);
+			results.push({
+				url,
+				validationResult,
+				processedValidationResult,
+			});
+		}
+
+		core.setOutput("results", results);
+
+		if (results.every((result) => result.processedValidationResult.success)) {
+			console.log(
+				results
+					.map((result) => result.processedValidationResult.resultText)
+					.join("\n"),
+			);
 		} else {
-			core.setFailed(processedValidationResult.resultText);
+			core.setFailed(
+				results
+					.filter((result) => result.processedValidationResult.success)
+					.map((result) => result.processedValidationResult.resultText)
+					.join("\n"),
+			);
 		}
 	} catch (error) {
 		// eslint-disable-next-line @typescript-eslint/restrict-template-expressions

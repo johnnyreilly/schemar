@@ -1,4 +1,5 @@
 import { ZodError } from "zod";
+import type { ProcessedValidationResult } from "./validationResult.js";
 import {
 	type ValidationResult,
 	validationResultSchema,
@@ -80,11 +81,6 @@ ${responseText}`,
 		}
 		throw err;
 	}
-}
-
-export interface ProcessedValidationResult {
-	success: boolean;
-	resultText: string;
 }
 
 export function processValidationResult(

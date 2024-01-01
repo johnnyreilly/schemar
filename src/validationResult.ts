@@ -75,3 +75,14 @@ export type ValidationResult = Omit<
 	},
 	"fetchError"
 >;
+
+export interface ProcessedValidationResult {
+	success: boolean;
+	resultText: string;
+}
+
+export interface Result {
+	url: string;
+	validationResult: ValidationResult;
+	processedValidationResult: ProcessedValidationResult;
+}
