@@ -30816,18 +30816,6 @@ module.exports = parseParams
 /******/ }
 /******/ 
 /************************************************************************/
-/******/ /* webpack/runtime/compat get default export */
-/******/ (() => {
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__nccwpck_require__.n = (module) => {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			() => (module['default']) :
-/******/ 			() => (module);
-/******/ 		__nccwpck_require__.d(getter, { a: getter });
-/******/ 		return getter;
-/******/ 	};
-/******/ })();
-/******/ 
 /******/ /* webpack/runtime/define property getters */
 /******/ (() => {
 /******/ 	// define getter functions for harmony exports
@@ -34930,7 +34918,6 @@ const validationResultSchema = z.object({
 
 // EXTERNAL MODULE: ./node_modules/.pnpm/@actions+core@1.10.1/node_modules/@actions/core/lib/core.js
 var core = __nccwpck_require__(9093);
-var core_default = /*#__PURE__*/__nccwpck_require__.n(core);
 // EXTERNAL MODULE: ./node_modules/.pnpm/zod-validation-error@2.1.0_zod@3.22.4/node_modules/zod-validation-error/dist/cjs/index.js
 var cjs = __nccwpck_require__(6707);
 ;// CONCATENATED MODULE: ./src/validate.ts
@@ -34996,21 +34983,22 @@ function processValidationResult(validationResult) {
 
 async function run() {
     try {
-        const url = core_default().getInput("url");
+        const url = core.getInput("url");
+        console.log(`Validating ${url} for structured data...`);
         const validationResult = await validateUrl(url);
         const processedValidationResult = processValidationResult(validationResult);
-        core_default().setOutput("validationResult", validationResult);
-        core_default().setOutput("processedValidationResult", processedValidationResult);
+        core.setOutput("validationResult", validationResult);
+        core.setOutput("processedValidationResult", processedValidationResult);
         if (processedValidationResult.success) {
             console.log(processedValidationResult.resultText);
         }
         else {
-            core_default().setFailed(processedValidationResult.resultText);
+            core.setFailed(processedValidationResult.resultText);
         }
     }
     catch (error) {
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
-        core_default().setFailed(error instanceof Error ? error.message : `error: ${error}`);
+        core.setFailed(error instanceof Error ? error.message : `error: ${error}`);
     }
 }
 
