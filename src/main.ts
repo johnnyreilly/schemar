@@ -16,8 +16,6 @@ export async function run(): Promise<void> {
 		} else {
 			core.setFailed(processedValidationResult.resultText);
 		}
-
-		console.log(processedValidationResult.resultText);
 	} catch (error) {
 		// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
 		core.setFailed(error instanceof Error ? error.message : `error: ${error}`);
