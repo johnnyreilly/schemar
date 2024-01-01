@@ -24,22 +24,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        id: checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node.js
-        id: setup-node
-        uses: actions/setup-node@v4
-        with:
-          cache: pnpm
-          node-version: "20"
-
-      - uses: pnpm/action-setup@v2
-
-      - name: Install Dependencies
-        run: pnpm install --frozen-lockfile
-        shell: bash
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/prepare
 
       - name: Build dist/ Directory
         id: build
@@ -52,6 +38,7 @@ jobs:
           if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
             echo "Detected uncommitted changes after build. See status below:"
             git diff --ignore-space-at-eol --text dist/
+            echo "You may need to run 'pnpm run build:release' locally and commit the changes."
             exit 1
           fi
 
