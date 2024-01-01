@@ -42,6 +42,10 @@ jobs:
             echo "See diff below:"
             echo ""
             git diff --ignore-space-at-eol --text dist/
+            echo ""
+            # say this again in case the diff is long
+            echo "You may need to run 'pnpm run build:release' locally and commit the changes."
+            echo ""
             exit 1
           fi
 
