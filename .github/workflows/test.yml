@@ -10,7 +10,7 @@ jobs:
         id: test-action
         uses: ./
         with:
-          url: https://johnnyreilly.com
+          urls: https://johnnyreilly.com
 
 name: Test
 
