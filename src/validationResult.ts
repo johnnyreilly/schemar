@@ -61,4 +61,17 @@ export const validationResultSchema = z.object({
 	totalNumErrors: z.number(),
 	totalNumWarnings: z.number(),
 });
-export type ValidationResult = z.infer<typeof validationResultSchema>;
+export type ValidationResultRaw = z.infer<typeof validationResultSchema>;
+
+export type ValidationResult = Omit<
+	{
+		[K in keyof ValidationResultRaw]-?: K extends
+			| "tripleGroups"
+			| "html"
+			| "url"
+			| "errors"
+			? ValidationResultRaw[K]
+			: ValidationResultRaw[K];
+	},
+	"fetchError"
+>;

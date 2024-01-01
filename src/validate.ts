@@ -5,7 +5,7 @@ import {
 } from "./validationResult.js";
 import { fromZodError } from "zod-validation-error";
 
-export async function validateUrl(url: string): Promise<ValidationResult> {
+export async function getValidationResponse(url: string): Promise<string> {
 	try {
 		const response = await fetch("https://validator.schema.org/validate", {
 			headers: {
@@ -33,21 +33,45 @@ export async function validateUrl(url: string): Promise<ValidationResult> {
 
 		const text = await response.text();
 
-		if (!text.indexOf("\n")) {
+		return text;
+	} catch (err) {
+		console.error(`Failed to get validation response for ${url}`, err);
+		throw new Error(`Failed to get validation response for ${url}`);
+	}
+}
+
+export function processValidationResponse(
+	responseText: string,
+): ValidationResult {
+	try {
+		if (!responseText.indexOf("\n")) {
 			throw new Error(`Received an unexpected response:
 
-${text}`);
+${responseText}`);
 		}
 
-		const json = text.substring(text.indexOf("\n"));
+		const json = responseText.substring(responseText.indexOf("\n"));
 		const validationResult = validationResultSchema.parse(JSON.parse(json));
 
 		if (validationResult.fetchError) {
 			throw new Error(
-				`Received a fetchError from the validator: ${validationResult.fetchError}`,
+				`Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid?`,
 			);
 		}
-		return validationResult;
+
+		if (
+			!validationResult.html ||
+			!validationResult.errors ||
+			!validationResult.url ||
+			!validationResult.tripleGroups
+		) {
+			throw new Error(
+				`Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
+
+${responseText}`,
+			);
+		}
+		return validationResult as ValidationResult;
 	} catch (err) {
 		if (err instanceof ZodError) {
 			const validationError = fromZodError(err);

@@ -23,7 +23,6 @@ describe("validationResult", () => {
 			).toBe("Person");
 
 			expect(validationResult).toBeTruthy();
-			console.log(validationResult);
 		} catch (err) {
 			if (err instanceof ZodError) {
 				const validationError = fromZodError(err);

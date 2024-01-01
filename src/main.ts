@@ -1,12 +1,18 @@
 import * as core from "@actions/core";
-import { processValidationResult, validateUrl } from "./validate.js";
+import {
+	processValidationResult,
+	processValidationResponse,
+	getValidationResponse,
+} from "./validate.js";
 
 export async function run(): Promise<void> {
 	try {
 		const url = core.getInput("url");
 		console.log(`Validating ${url} for structured data...`);
 
-		const validationResult = await validateUrl(url);
+		const validationResult = processValidationResponse(
+			await getValidationResponse(url),
+		);
 		const processedValidationResult = processValidationResult(validationResult);
 
 		core.setOutput("validationResult", validationResult);

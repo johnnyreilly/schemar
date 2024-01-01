@@ -1,5 +1,6 @@
 import { type ValidationResult } from "./validationResult.js";
-export declare function validateUrl(url: string): Promise<ValidationResult>;
+export declare function getValidationResponse(url: string): Promise<string>;
+export declare function processValidationResponse(responseText: string): ValidationResult;
 export interface ProcessedValidationResult {
     success: boolean;
     resultText: string;

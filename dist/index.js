@@ -34927,7 +34927,7 @@ var cjs = __nccwpck_require__(6707);
 
 
 
-async function validateUrl(url) {
+async function getValidationResponse(url) {
     try {
         const response = await fetch("https://validator.schema.org/validate", {
             headers: {
@@ -34952,15 +34952,32 @@ async function validateUrl(url) {
             throw new Error(`Received a ${response.statusText}`);
         }
         const text = await response.text();
-        if (!text.indexOf("\n")) {
+        return text;
+    }
+    catch (err) {
+        console.error(`Failed to get validation response for ${url}`, err);
+        throw new Error(`Failed to get validation response for ${url}`);
+    }
+}
+function processValidationResponse(responseText) {
+    try {
+        if (!responseText.indexOf("\n")) {
             throw new Error(`Received an unexpected response:
 
-${text}`);
+${responseText}`);
         }
-        const json = text.substring(text.indexOf("\n"));
+        const json = responseText.substring(responseText.indexOf("\n"));
         const validationResult = validationResultSchema.parse(JSON.parse(json));
         if (validationResult.fetchError) {
-            throw new Error(`Received a fetchError from the validator: ${validationResult.fetchError}`);
+            throw new Error(`Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid?`);
+        }
+        if (!validationResult.html ||
+            !validationResult.errors ||
+            !validationResult.url ||
+            !validationResult.tripleGroups) {
+            throw new Error(`Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
+
+${responseText}`);
         }
         return validationResult;
     }
@@ -34999,7 +35016,7 @@ async function run() {
     try {
         const url = core.getInput("url");
         console.log(`Validating ${url} for structured data...`);
-        const validationResult = await validateUrl(url);
+        const validationResult = processValidationResponse(await getValidationResponse(url));
         const processedValidationResult = processValidationResult(validationResult);
         core.setOutput("validationResult", validationResult);
         core.setOutput("processedValidationResult", processedValidationResult);
