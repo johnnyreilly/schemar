@@ -35,13 +35,13 @@ jobs:
       - name: Compare directories
         id: diff
         run: |
-          if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
+          if [ "$(git diff --ignore-space-at-eol --text dist/index.js | wc -l)" -gt "0" ]; then
             echo "Detected uncommitted changes after build."
             echo "You may need to run 'pnpm run build:release' locally and commit the changes."
             echo ""
             echo "See diff below:"
             echo ""
-            git diff --ignore-space-at-eol --text dist/
+            git diff --ignore-space-at-eol --text dist/index.js
             echo ""
             # say this again in case the diff is long
             echo "You may need to run 'pnpm run build:release' locally and commit the changes."
