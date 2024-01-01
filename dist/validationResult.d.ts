@@ -437,4 +437,13 @@ export type ValidationResultRaw = z.infer<typeof validationResultSchema>;
 export type ValidationResult = Omit<{
     [K in keyof ValidationResultRaw]-?: K extends "tripleGroups" | "html" | "url" | "errors" ? ValidationResultRaw[K] : ValidationResultRaw[K];
 }, "fetchError">;
+export interface ProcessedValidationResult {
+    success: boolean;
+    resultText: string;
+}
+export interface Result {
+    url: string;
+    validationResult: ValidationResult;
+    processedValidationResult: ProcessedValidationResult;
+}
 export {};

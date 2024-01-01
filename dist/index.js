@@ -34931,19 +34931,8 @@ async function getValidationResponse(url) {
     try {
         const response = await fetch("https://validator.schema.org/validate", {
             headers: {
-                // "accept": "*/*",
-                // "accept-language": "en-GB,en;q=0.9,de-DE;q=0.8,de;q=0.7,en-US;q=0.6",
                 "cache-control": "no-cache",
                 "content-type": "application/x-www-form-urlencoded;charset=UTF-8",
-                // "pragma": "no-cache",
-                // "sec-ch-ua": "\"Not_A Brand\";v=\"8\", \"Chromium\";v=\"120\", \"Google Chrome\";v=\"120\"",
-                // "sec-ch-ua-mobile": "?0",
-                // "sec-ch-ua-platform": "\"Linux\"",
-                // "sec-fetch-dest": "empty",
-                // "sec-fetch-mode": "cors",
-                // "sec-fetch-site": "same-origin",
-                // "Referer": "https://validator.schema.org/",
-                // "Referrer-Policy": "strict-origin-when-cross-origin"
             },
             body: `url=${encodeURIComponent(url)}`,
             method: "POST",
@@ -35014,17 +35003,30 @@ function processValidationResult(validationResult) {
 
 async function run() {
     try {
-        const url = core.getInput("url");
-        console.log(`Validating ${url} for structured data...`);
-        const validationResult = processValidationResponse(await getValidationResponse(url));
-        const processedValidationResult = processValidationResult(validationResult);
-        core.setOutput("validationResult", validationResult);
-        core.setOutput("processedValidationResult", processedValidationResult);
-        if (processedValidationResult.success) {
-            console.log(processedValidationResult.resultText);
+        const urlsString = core.getInput("urls");
+        const urls = urlsString.split("\n").map((url) => url.trim());
+        const results = [];
+        for (const url of urls) {
+            console.log(`Validating ${url} for structured data...`);
+            const validationResult = processValidationResponse(await getValidationResponse(url));
+            const processedValidationResult = processValidationResult(validationResult);
+            results.push({
+                url,
+                validationResult,
+                processedValidationResult,
+            });
+        }
+        core.setOutput("results", results);
+        if (results.every((result) => result.processedValidationResult.success)) {
+            console.log(results
+                .map((result) => result.processedValidationResult.resultText)
+                .join("\n"));
         }
         else {
-            core.setFailed(processedValidationResult.resultText);
+            core.setFailed(results
+                .filter((result) => result.processedValidationResult.success)
+                .map((result) => result.processedValidationResult.resultText)
+                .join("\n"));
         }
     }
     catch (error) {
