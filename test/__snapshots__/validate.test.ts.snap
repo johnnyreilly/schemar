@@ -2,14 +2,18 @@
 
 exports[`processValidationResult > given errors returns unsuccessfully 1`] = `
 {
-  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 1 errors and 0 warnings",
+  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 1 errors and 0 warnings
+For more details see https://validator.schema.org/#url=https%3A%2F%2Fdeploy-preview-9669--docusaurus-2.netlify.app%2Fblog%2Freleases%2F2.4%2F
+",
   "success": false,
 }
 `;
 
 exports[`processValidationResult > given no structured data returns unsuccessfully 1`] = `
 {
-  "resultText": "Validated https://news.ycombinator.com/ and found no structured data",
+  "resultText": "Validated https://news.ycombinator.com/ and found no structured data
+For more details see https://validator.schema.org/#url=https%3A%2F%2Fnews.ycombinator.com%2F
+",
   "success": false,
 }
 `;
@@ -17,14 +21,18 @@ exports[`processValidationResult > given no structured data returns unsuccessful
 exports[`processValidationResult > given valid schema without errors / warnings returns successfully 1`] = `
 {
   "resultText": "https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ has structured data of these types:
- - BlogPosting",
+ - BlogPosting
+For more details see https://validator.schema.org/#url=https%3A%2F%2Fdeploy-preview-9669--docusaurus-2.netlify.app%2Fblog%2Freleases%2F2.4%2F
+",
   "success": true,
 }
 `;
 
 exports[`processValidationResult > given warnings returns unsuccessfully 1`] = `
 {
-  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 0 errors and 1 warnings",
+  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 0 errors and 1 warnings
+For more details see https://validator.schema.org/#url=https%3A%2F%2Fdeploy-preview-9669--docusaurus-2.netlify.app%2Fblog%2Freleases%2F2.4%2F
+",
   "success": false,
 }
 `;

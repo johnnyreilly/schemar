@@ -34979,23 +34979,30 @@ ${responseText}`);
     }
 }
 function processValidationResult(validationResult) {
+    const seeMore = `For more details see https://validator.schema.org/#url=${encodeURIComponent(validationResult.url)}`;
     if (validationResult.numObjects === 0) {
         return {
             success: false,
-            resultText: `Validated ${validationResult.url} and found no structured data`,
+            resultText: `Validated ${validationResult.url} and found no structured data
+${seeMore}
+`,
         };
     }
     if (validationResult.totalNumErrors > 0 ||
         validationResult.totalNumWarnings > 0) {
         return {
             success: false,
-            resultText: `Validated ${validationResult.url} and failed with ${validationResult.totalNumErrors} errors and ${validationResult.totalNumWarnings} warnings`,
+            resultText: `Validated ${validationResult.url} and failed with ${validationResult.totalNumErrors} errors and ${validationResult.totalNumWarnings} warnings
+${seeMore}
+`,
         };
     }
     return {
         success: true,
         resultText: `${validationResult.url} has structured data of these types:
-${validationResult.tripleGroups.map((group) => ` - ${group.type}`).join("\n")}`,
+${validationResult.tripleGroups.map((group) => ` - ${group.type}`).join("\n")}
+${seeMore}
+`,
     };
 }
 
