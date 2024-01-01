@@ -83,6 +83,7 @@ export interface ProcessedValidationResult {
 
 export interface Result {
 	url: string;
-	validationResult: ValidationResult;
+	// appears to be too large to use in a GitHub Action output
+	// validationResult: ValidationResult;
 	processedValidationResult: ProcessedValidationResult;
 }

@@ -35020,7 +35020,7 @@ async function run() {
             const processedValidationResult = processValidationResult(validationResult);
             results.push({
                 url,
-                validationResult,
+                // validationResult,
                 processedValidationResult,
             });
         }

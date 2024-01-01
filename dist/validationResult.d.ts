@@ -443,7 +443,6 @@ export interface ProcessedValidationResult {
 }
 export interface Result {
     url: string;
-    validationResult: ValidationResult;
     processedValidationResult: ProcessedValidationResult;
 }
 export {};

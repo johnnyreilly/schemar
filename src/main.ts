@@ -23,7 +23,7 @@ export async function run(): Promise<void> {
 
 			results.push({
 				url,
-				validationResult,
+				// validationResult,
 				processedValidationResult,
 			});
 		}
