@@ -6,7 +6,7 @@ import { validationResultSchema } from "../src/validationResult.js";
 import path from "node:path";
 import { ZodError } from "zod";
 
-describe("validate", () => {
+describe("validationResult", () => {
 	it("json parses successfully", async () => {
 		const json = await fs.readFile(
 			path.join(__dirname, "exampleValidation.json"),

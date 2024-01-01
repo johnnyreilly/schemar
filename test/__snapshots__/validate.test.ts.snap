@@ -1,0 +1,22 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`processValidationResult > errors returns unsuccessfully 1`] = `
+{
+  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 1 errors and 0 warnings",
+  "success": false,
+}
+`;
+
+exports[`processValidationResult > valid schema without errors / warnings returns successfully 1`] = `
+{
+  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/!",
+  "success": true,
+}
+`;
+
+exports[`processValidationResult > warnings returns unsuccessfully 1`] = `
+{
+  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 0 errors and 1 warnings",
+  "success": false,
+}
+`;

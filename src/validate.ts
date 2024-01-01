@@ -39,3 +39,27 @@ export async function validateUrl(url: string): Promise<ValidationResult> {
 		throw err;
 	}
 }
+
+export interface ProcessedValidationResult {
+	success: boolean;
+	resultText: string;
+}
+
+export function processValidationResult(
+	validationResult: ValidationResult,
+): ProcessedValidationResult {
+	if (
+		validationResult.totalNumErrors > 0 ||
+		validationResult.totalNumWarnings > 0
+	) {
+		return {
+			success: false,
+			resultText: `Validated ${validationResult.url} and failed with ${validationResult.totalNumErrors} errors and ${validationResult.totalNumWarnings} warnings`,
+		};
+	}
+
+	return {
+		success: true,
+		resultText: `Validated ${validationResult.url}!`,
+	};
+}

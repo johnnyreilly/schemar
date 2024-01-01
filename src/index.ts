@@ -1,24 +1,23 @@
 export * from "./validationResult.js";
 import core from "@actions/core";
-import github from "@actions/github";
-import { validateUrl } from "./validate.js";
+import { processValidationResult, validateUrl } from "./validate.js";
 
 try {
-	// `who-to-greet` input defined in action metadata file
 	const url = core.getInput("url");
 
 	const validationResult = await validateUrl(url);
+	const processedValidationResult = processValidationResult(validationResult);
 
-	console.log(`Validated ${url}!
-	
-${validationResult.totalNumErrors} errors
-${validationResult.totalNumWarnings} warnings`);
+	core.setOutput("validationResult", validationResult);
+	core.setOutput("processedValidationResult", processedValidationResult);
 
-	const time = new Date().toTimeString();
-	core.setOutput("time", time);
-	// Get the JSON webhook payload for the event that triggered the workflow
-	const payload = JSON.stringify(github.context.payload, undefined, 2);
-	console.log(`The event payload: ${payload}`);
+	if (processedValidationResult.success) {
+		console.log(processedValidationResult.resultText);
+	} else {
+		core.setFailed(processedValidationResult.resultText);
+	}
+
+	console.log(processedValidationResult.resultText);
 } catch (error) {
 	// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
 	core.setFailed(error instanceof Error ? error.message : `error: ${error}`);
