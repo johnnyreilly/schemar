@@ -36,9 +36,12 @@ jobs:
         id: diff
         run: |
           if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
-            echo "Detected uncommitted changes after build. See status below:"
-            git diff --ignore-space-at-eol --text dist/
+            echo "Detected uncommitted changes after build."
             echo "You may need to run 'pnpm run build:release' locally and commit the changes."
+            echo ""
+            echo "See diff below:"
+            echo ""
+            git diff --ignore-space-at-eol --text dist/
             exit 1
           fi
 
