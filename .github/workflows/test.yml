@@ -5,7 +5,12 @@ jobs:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/prepare
       - run: pnpm run test
-      - run: pnpm run debug
+
+      - name: Test local action
+        id: test-action
+        uses: ./
+        with:
+          url: https://johnnyreilly,com
 
 name: Test
 

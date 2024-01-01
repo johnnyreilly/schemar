@@ -11,14 +11,27 @@
 
 ## Usage
 
-```shell
-npm i schemar
-```
+This action works by:
 
-```ts
-import { greet } from "schemar";
+1. Checking the supplied URL features structured data using the [Schema.org validator](https://validator.schema.org/)
+2. If no structured data is found, the action fails. It also fails if the structured data is invalid.
 
-greet("Hello, world! 💖");
+```yml
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: johnnyreilly/schemar@v0.1.0
+	  	with:
+		  url: https://johnnyreilly.com
+
+name: Validate structured data
+
+on:
+  pull_request: ~
+  push:
+    branches:
+      - main
 ```
 
 ## Development

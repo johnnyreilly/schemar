@@ -21,7 +21,7 @@
 	],
 	"scripts": {
 		"build:debug": "rimraf lib && tsc --noEmit false --outDir lib",
-		"build:release": "ncc build src/index.ts -o dist",
+		"build:release": "ncc build src/index.ts -o dist --license licenses.txt",
 		"debug": "pnpm run build:debug && node --env-file=.env lib/index.js",
 		"format": "prettier \"**/*\" --ignore-unknown",
 		"lint": "eslint . .*js --max-warnings 0",
