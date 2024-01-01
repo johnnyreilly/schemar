@@ -35007,7 +35007,6 @@ async function run() {
         else {
             core_default().setFailed(processedValidationResult.resultText);
         }
-        console.log(processedValidationResult.resultText);
     }
     catch (error) {
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
