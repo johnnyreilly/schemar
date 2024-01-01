@@ -9,7 +9,7 @@ exports[`processValidationResult > given errors returns unsuccessfully 1`] = `
 
 exports[`processValidationResult > given no structured data returns unsuccessfully 1`] = `
 {
-  "resultText": "Validated https://news.ycombinator.com/ and found no objects",
+  "resultText": "Validated https://news.ycombinator.com/ and found no structured data",
   "success": false,
 }
 `;

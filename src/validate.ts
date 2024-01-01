@@ -51,7 +51,7 @@ export function processValidationResult(
 	if (validationResult.numObjects === 0) {
 		return {
 			success: false,
-			resultText: `Validated ${validationResult.url} and found no objects`,
+			resultText: `Validated ${validationResult.url} and found no structured data`,
 		};
 	}
 
