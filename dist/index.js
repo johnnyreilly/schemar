@@ -34975,7 +34975,7 @@ function processValidationResult(validationResult) {
     if (validationResult.numObjects === 0) {
         return {
             success: false,
-            resultText: `Validated ${validationResult.url} and found no objects`,
+            resultText: `Validated ${validationResult.url} and found no structured data`,
         };
     }
     if (validationResult.totalNumErrors > 0 ||
