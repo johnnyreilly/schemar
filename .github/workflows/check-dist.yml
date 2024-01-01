@@ -7,7 +7,7 @@
 # If this workflow is run from a feature branch, it will act as an additional CI
 # check and fail if the checked-in `dist/` directory does not match what is
 # expected from the build.
-name: Check Transpiled JavaScript
+name: Check transpiled JavaScript in dist is up to date
 
 on:
   push:
@@ -20,19 +20,19 @@ permissions:
 
 jobs:
   check-dist:
-    name: Check dist/
+    name: Check dist
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/prepare
 
-      - name: Build dist/ Directory
+      - name: Build dist directory
         id: build
         run: pnpm run build:release
 
       # This will fail the workflow if the PR wasn't created by Dependabot.
-      - name: Compare Directories
+      - name: Compare directories
         id: diff
         run: |
           if [ "$(git diff --ignore-space-at-eol --text dist/ | wc -l)" -gt "0" ]; then
@@ -52,7 +52,7 @@ jobs:
       # If `dist/` was different than expected, and this was not a Dependabot
       # PR, upload the expected version as a workflow artifact.
       - if: ${{ failure() && steps.diff.outcome == 'failure' }}
-        name: Upload Artifact
+        name: Upload artifact
         id: upload
         uses: actions/upload-artifact@v4
         with:
