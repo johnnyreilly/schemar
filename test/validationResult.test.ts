@@ -9,7 +9,7 @@ import { ZodError } from "zod";
 describe("validationResult", () => {
 	it("json parses successfully", async () => {
 		const json = await fs.readFile(
-			path.join(__dirname, "exampleValidation.json"),
+			path.join(__dirname, "exampleValidStructuredDataValidation.json"),
 			"utf8",
 		);
 

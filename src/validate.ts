@@ -48,6 +48,13 @@ export interface ProcessedValidationResult {
 export function processValidationResult(
 	validationResult: ValidationResult,
 ): ProcessedValidationResult {
+	if (validationResult.numObjects === 0) {
+		return {
+			success: false,
+			resultText: `Validated ${validationResult.url} and found no objects`,
+		};
+	}
+
 	if (
 		validationResult.totalNumErrors > 0 ||
 		validationResult.totalNumWarnings > 0

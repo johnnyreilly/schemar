@@ -51,6 +51,7 @@ const tripleGroupSchema = z.object({
 export const validationResultSchema = z.object({
 	url: z.string(),
 	isRendered: z.boolean(),
+	numObjects: z.number(),
 	tripleGroups: tripleGroupSchema.array(),
 	html: z.string(),
 	errors: z.unknown().array(),

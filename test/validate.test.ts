@@ -5,21 +5,22 @@ import { validationResultSchema } from "../src/validationResult.js";
 import path from "node:path";
 
 describe("processValidationResult", () => {
-	it("valid schema without errors / warnings returns successfully", async () => {
+	it("given valid schema without errors / warnings returns successfully", async () => {
 		const json = await fs.readFile(
-			path.join(__dirname, "exampleValidation.json"),
+			path.join(__dirname, "exampleValidStructuredDataValidation.json"),
 			"utf8",
 		);
 
 		const validationResult = validationResultSchema.parse(JSON.parse(json));
 		const processedValidationResult = processValidationResult(validationResult);
 
+		expect(processedValidationResult.success).toBe(true);
 		expect(processedValidationResult).toMatchSnapshot();
 	});
 
-	it("errors returns unsuccessfully", async () => {
+	it("given errors returns unsuccessfully", async () => {
 		const json = await fs.readFile(
-			path.join(__dirname, "exampleValidation.json"),
+			path.join(__dirname, "exampleValidStructuredDataValidation.json"),
 			"utf8",
 		);
 
@@ -27,12 +28,13 @@ describe("processValidationResult", () => {
 		validationResult.totalNumErrors = 1;
 		const processedValidationResult = processValidationResult(validationResult);
 
+		expect(processedValidationResult.success).toBe(false);
 		expect(processedValidationResult).toMatchSnapshot();
 	});
 
-	it("warnings returns unsuccessfully", async () => {
+	it("given warnings returns unsuccessfully", async () => {
 		const json = await fs.readFile(
-			path.join(__dirname, "exampleValidation.json"),
+			path.join(__dirname, "exampleValidStructuredDataValidation.json"),
 			"utf8",
 		);
 
@@ -40,6 +42,20 @@ describe("processValidationResult", () => {
 		validationResult.totalNumWarnings = 1;
 		const processedValidationResult = processValidationResult(validationResult);
 
+		expect(processedValidationResult.success).toBe(false);
+		expect(processedValidationResult).toMatchSnapshot();
+	});
+
+	it("given no structured data returns unsuccessfully", async () => {
+		const json = await fs.readFile(
+			path.join(__dirname, "exampleNoStructuredDataValidation.json"),
+			"utf8",
+		);
+
+		const validationResult = validationResultSchema.parse(JSON.parse(json));
+		const processedValidationResult = processValidationResult(validationResult);
+
+		expect(processedValidationResult.success).toBe(false);
 		expect(processedValidationResult).toMatchSnapshot();
 	});
 });
