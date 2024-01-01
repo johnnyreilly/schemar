@@ -94,6 +94,7 @@ export function processValidationResult(
 
 	return {
 		success: true,
-		resultText: `Validated ${validationResult.url}!`,
+		resultText: `${validationResult.url} has structured data of these types:
+${validationResult.tripleGroups.map((group) => ` - ${group.type}`).join("\n")}`,
 	};
 }

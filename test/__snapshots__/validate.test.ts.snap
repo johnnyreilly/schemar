@@ -16,7 +16,8 @@ exports[`processValidationResult > given no structured data returns unsuccessful
 
 exports[`processValidationResult > given valid schema without errors / warnings returns successfully 1`] = `
 {
-  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/!",
+  "resultText": "https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ has structured data of these types:
+ - BlogPosting",
   "success": true,
 }
 `;
