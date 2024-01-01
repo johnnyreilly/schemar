@@ -18,6 +18,7 @@ module.exports = {
 					{ enforceForIfStatements: true },
 				],
 				"operator-assignment": "error",
+				"@typescript-eslint/consistent-type-imports": "error",
 			},
 		},
 		{

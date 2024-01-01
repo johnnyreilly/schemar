@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 import { describe, expect, it } from "vitest";
 import { fromZodError } from "zod-validation-error";
 
-import { validationSchema } from "../src/validate.js";
+import { validationResultSchema } from "../src/validationResult.js";
 import path from "node:path";
 import { ZodError } from "zod";
 
@@ -14,15 +14,16 @@ describe("validate", () => {
 		);
 
 		try {
-			const validation = validationSchema.parse(JSON.parse(json));
+			const validationResult = validationResultSchema.parse(JSON.parse(json));
 
-			// test recursive structure is parsed correctly by checking a property
+			// test recursive structure is parsed correctly by checking a nested property
 			expect(
-				validation.tripleGroups[0].nodes[0].nodeProperties[0].target.typeGroup,
+				validationResult.tripleGroups[0].nodes[0].nodeProperties[0].target
+					.typeGroup,
 			).toBe("Person");
 
-			expect(validation).toBeTruthy();
-			console.log(validation);
+			expect(validationResult).toBeTruthy();
+			console.log(validationResult);
 		} catch (err) {
 			if (err instanceof ZodError) {
 				const validationError = fromZodError(err);

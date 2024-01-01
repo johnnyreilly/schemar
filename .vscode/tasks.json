@@ -4,7 +4,6 @@
 		{
 			"type": "npm",
 			"script": "build:debug",
-			"problemMatcher": [],
 			"label": "build:debug",
 			"detail": "Build the project for debugging"
 		}

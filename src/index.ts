@@ -1,13 +1,19 @@
-// export * from "./greet.js";
-// export * from "./types.js";
+export * from "./validationResult.js";
 import core from "@actions/core";
 import github from "@actions/github";
+import { validateUrl } from "./validate.js";
 
 try {
 	// `who-to-greet` input defined in action metadata file
-	const nameToGreet = core.getInput("url");
+	const url = core.getInput("url");
 
-	console.log(`Hello ${nameToGreet}!`);
+	const validationResult = await validateUrl(url);
+
+	console.log(`Validated ${url}!
+	
+${validationResult.totalNumErrors} errors
+${validationResult.totalNumWarnings} warnings`);
+
 	const time = new Date().toTimeString();
 	core.setOutput("time", time);
 	// Get the JSON webhook payload for the event that triggered the workflow
