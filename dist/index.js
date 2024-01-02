@@ -35044,10 +35044,10 @@ function seeMoreMaker(url) {
 
 
 async function run() {
+    const results = [];
     try {
         const urlsString = core.getInput("urls");
         const urls = urlsString.split("\n").map((url) => url.trim());
-        const results = [];
         for (const url of urls) {
             console.log(`Validating ${url} for structured data...`);
             const validationResult = processValidationResponse(url, await getValidationResponse(url));
@@ -35071,6 +35071,9 @@ async function run() {
         }
     }
     catch (error) {
+        console.error('Unhandled error in "run" function');
+        console.error(error);
+        core.setOutput("results", results);
         // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
         core.setFailed(error instanceof Error ? error.message : `error: ${error}`);
     }

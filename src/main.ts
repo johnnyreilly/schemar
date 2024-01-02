@@ -7,11 +7,11 @@ import {
 import type { Result } from "./validationResult.js";
 
 export async function run(): Promise<void> {
+	const results: Result[] = [];
 	try {
 		const urlsString = core.getInput("urls");
 		const urls = urlsString.split("\n").map((url) => url.trim());
 
-		const results: Result[] = [];
 		for (const url of urls) {
 			console.log(`Validating ${url} for structured data...`);
 
@@ -45,6 +45,11 @@ export async function run(): Promise<void> {
 			);
 		}
 	} catch (error) {
+		console.error('Unhandled error in "run" function');
+		console.error(error);
+
+		core.setOutput("results", results);
+
 		// eslint-disable-next-line @typescript-eslint/restrict-template-expressions
 		core.setFailed(error instanceof Error ? error.message : `error: ${error}`);
 	}
