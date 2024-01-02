@@ -37,12 +37,13 @@ export async function run(): Promise<void> {
 					.join("\n"),
 			);
 		} else {
-			core.setFailed(
-				results
-					.filter((result) => result.processedValidationResult.success)
-					.map((result) => result.processedValidationResult.resultText)
-					.join("\n"),
-			);
+			const failedDetails = results
+				.filter((result) => !result.processedValidationResult.success)
+				.map((result) => result.processedValidationResult.resultText)
+				.join("\n");
+
+			console.error(failedDetails);
+			core.setFailed(failedDetails);
 		}
 	} catch (error) {
 		console.error('Unhandled error in "run" function');

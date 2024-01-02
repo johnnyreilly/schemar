@@ -35064,10 +35064,12 @@ async function run() {
                 .join("\n"));
         }
         else {
-            core.setFailed(results
-                .filter((result) => result.processedValidationResult.success)
+            const failedDetails = results
+                .filter((result) => !result.processedValidationResult.success)
                 .map((result) => result.processedValidationResult.resultText)
-                .join("\n"));
+                .join("\n");
+            console.error(failedDetails);
+            core.setFailed(failedDetails);
         }
     }
     catch (error) {
