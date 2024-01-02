@@ -3,6 +3,7 @@ import {
 	processValidationResult,
 	processValidationResponse,
 	getValidationResponse,
+	seeMoreMaker,
 } from "./validate.js";
 import type { Result } from "./validationResult.js";
 
@@ -15,17 +16,27 @@ export async function run(): Promise<void> {
 		for (const url of urls) {
 			console.log(`Validating ${url} for structured data...`);
 
-			const validationResult = processValidationResponse(
-				await getValidationResponse(url),
-			);
-			const processedValidationResult =
-				processValidationResult(validationResult);
+			try {
+				const validationResult = processValidationResponse(
+					await getValidationResponse(url),
+				);
+				const processedValidationResult =
+					processValidationResult(validationResult);
 
-			results.push({
-				url,
-				// validationResult,
-				processedValidationResult,
-			});
+				results.push({
+					url,
+					processedValidationResult,
+				});
+			} catch (err) {
+				console.error(`Failed to validate ${url}`, err);
+				results.push({
+					url,
+					processedValidationResult: {
+						success: false,
+						resultText: `Failed to validate ${url}. ${seeMoreMaker(url)}`,
+					},
+				});
+			}
 		}
 
 		core.setOutput("results", results);

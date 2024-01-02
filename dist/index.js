@@ -34979,7 +34979,7 @@ ${responseText}`);
     }
 }
 function processValidationResult(validationResult) {
-    const seeMore = `For more details see https://validator.schema.org/#url=${encodeURIComponent(validationResult.url)}`;
+    const seeMore = seeMoreMaker(validationResult.url);
     if (validationResult.numObjects === 0) {
         return {
             success: false,
@@ -35006,6 +35006,9 @@ ${seeMore}
 `,
     };
 }
+function seeMoreMaker(url) {
+    return `For more details see https://validator.schema.org/#url=${encodeURIComponent(url)}`;
+}
 
 ;// CONCATENATED MODULE: ./src/main.ts
 
@@ -35017,13 +35020,24 @@ async function run() {
         const results = [];
         for (const url of urls) {
             console.log(`Validating ${url} for structured data...`);
-            const validationResult = processValidationResponse(await getValidationResponse(url));
-            const processedValidationResult = processValidationResult(validationResult);
-            results.push({
-                url,
-                // validationResult,
-                processedValidationResult,
-            });
+            try {
+                const validationResult = processValidationResponse(await getValidationResponse(url));
+                const processedValidationResult = processValidationResult(validationResult);
+                results.push({
+                    url,
+                    processedValidationResult,
+                });
+            }
+            catch (err) {
+                console.error(`Failed to validate ${url}`, err);
+                results.push({
+                    url,
+                    processedValidationResult: {
+                        success: false,
+                        resultText: `Failed to validate ${url}. ${seeMoreMaker(url)}`,
+                    },
+                });
+            }
         }
         core.setOutput("results", results);
         if (results.every((result) => result.processedValidationResult.success)) {

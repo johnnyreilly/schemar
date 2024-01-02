@@ -75,9 +75,7 @@ ${responseText}`,
 export function processValidationResult(
 	validationResult: ValidationResult,
 ): ProcessedValidationResult {
-	const seeMore = `For more details see https://validator.schema.org/#url=${encodeURIComponent(
-		validationResult.url,
-	)}`;
+	const seeMore = seeMoreMaker(validationResult.url);
 
 	if (validationResult.numObjects === 0) {
 		return {
@@ -108,4 +106,10 @@ ${validationResult.tripleGroups.map((group) => ` - ${group.type}`).join("\n")}
 ${seeMore}
 `,
 	};
+}
+
+export function seeMoreMaker(url: string) {
+	return `For more details see https://validator.schema.org/#url=${encodeURIComponent(
+		url,
+	)}`;
 }
