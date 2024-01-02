@@ -1,0 +1,11 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "build:debug",
+			"label": "build:debug",
+			"detail": "Build the project for debugging"
+		}
+	]
+}

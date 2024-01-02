@@ -1,12 +1,18 @@
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: ./.github/actions/prepare
-      - run: pnpm build:release
+      - run: pnpm run test
 
-name: Build
+      - name: Test local action
+        id: test-action
+        uses: ./
+        with:
+          urls: https://johnnyreilly.com
+
+name: Test
 
 on:
   pull_request: ~
