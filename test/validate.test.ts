@@ -18,7 +18,10 @@ describe("processValidationResult", () => {
 				"utf8",
 			));
 
-		const validationResult = processValidationResponse(text);
+		const validationResult = processValidationResponse(
+			"https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/",
+			text,
+		);
 		const processedValidationResult = processValidationResult(validationResult);
 
 		expect(processedValidationResult.success).toBe(true);
@@ -29,11 +32,17 @@ describe("processValidationResult", () => {
 		const text =
 			prefix +
 			(await fs.readFile(
-				path.join(__dirname, "exampleValidStructuredDataValidation.json"),
+				path.join(__dirname, "exampleInvalidStructuredDataValidation.json"),
 				"utf8",
 			));
 
-		const validationResult = processValidationResponse(text);
+		const validationResult = processValidationResponse(
+			"https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/",
+			text,
+		);
+		if (typeof validationResult === "string") {
+			throw new Error("validationResult is string");
+		}
 		validationResult.totalNumErrors = 1;
 		const processedValidationResult = processValidationResult(validationResult);
 
@@ -49,7 +58,13 @@ describe("processValidationResult", () => {
 				"utf8",
 			));
 
-		const validationResult = processValidationResponse(text);
+		const validationResult = processValidationResponse(
+			"https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/",
+			text,
+		);
+		if (typeof validationResult === "string") {
+			throw new Error("validationResult is string");
+		}
 		validationResult.totalNumWarnings = 1;
 		const processedValidationResult = processValidationResult(validationResult);
 
@@ -65,7 +80,10 @@ describe("processValidationResult", () => {
 				"utf8",
 			));
 
-		const validationResult = processValidationResponse(text);
+		const validationResult = processValidationResponse(
+			"https://news.ycombinator.com/",
+			text,
+		);
 		const processedValidationResult = processValidationResult(validationResult);
 
 		expect(processedValidationResult.success).toBe(false);

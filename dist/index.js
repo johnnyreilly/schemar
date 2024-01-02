@@ -34876,6 +34876,16 @@ const nodeTypeSchema = z.object({
     end: z.number(),
 });
 // type NodeType = z.infer<typeof nodeTypeSchema>;
+const errorSchema = z.object({
+    ownerSet: z.object({ SPORE: z.boolean() }),
+    errorType: z.string(),
+    args: z.array(z.string()),
+    begin: z.number(),
+    end: z.number(),
+    isSevere: z.boolean(),
+    errorID: z.number(),
+    ownerToSeverity: z.object({ SPORE: z.string() }),
+});
 const baseNodePropertiesSchema = z.object({
     pred: z.string(),
     errors: z.unknown().array(),
@@ -34889,7 +34899,7 @@ const nodeSchema = z.object({
     types: nodeTypeSchema.array(),
     typeGroup: z.string(),
     idProperty: nodeTypeSchema.optional(),
-    errors: z.unknown().array(),
+    errors: errorSchema.array(),
     properties: nodeTypeSchema.array(),
     nodeProperties: nodePropertiesSchema.array(),
     numErrors: z.number(),
@@ -34914,7 +34924,7 @@ const validationResultSchema = z.object({
     numObjects: z.number(),
     tripleGroups: tripleGroupSchema.array().optional(),
     html: z.string().optional(),
-    errors: z.unknown().array().optional(),
+    errors: errorSchema.array().optional(),
     totalNumErrors: z.number(),
     totalNumWarnings: z.number(),
 });
@@ -34938,35 +34948,44 @@ async function getValidationResponse(url) {
             method: "POST",
         });
         if (!response.ok) {
-            throw new Error(`Received a ${response.statusText}`);
+            console.error(`Received a ${response.statusText}`);
+            return "";
         }
         const text = await response.text();
         return text;
     }
     catch (err) {
         console.error(`Failed to get validation response for ${url}`, err);
-        throw new Error(`Failed to get validation response for ${url}`);
+        return "";
     }
 }
-function processValidationResponse(responseText) {
+function processValidationResponse(url, responseText) {
+    const seeMore = seeMoreMaker(url);
     try {
+        if (!responseText) {
+            return `Received an empty response - ${seeMore}`;
+        }
         if (!responseText.indexOf("\n")) {
-            throw new Error(`Received an unexpected response:
+            return `Received an unexpected response:
 
-${responseText}`);
+${responseText}
+
+${seeMore}`;
         }
         const json = responseText.substring(responseText.indexOf("\n"));
         const validationResult = validationResultSchema.parse(JSON.parse(json));
         if (validationResult.fetchError) {
-            throw new Error(`Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid?`);
+            return `Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid? ${seeMore}`;
         }
         if (!validationResult.html ||
             !validationResult.errors ||
             !validationResult.url ||
             !validationResult.tripleGroups) {
-            throw new Error(`Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
+            return `Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
 
-${responseText}`);
+${responseText}
+
+${seeMore}`;
         }
         return validationResult;
     }
@@ -34974,11 +34993,22 @@ ${responseText}`);
         if (err instanceof ZodError) {
             const validationError = (0,cjs/* fromZodError */.CC)(err);
             console.error(validationError);
+            return `Failed to parse validation response for ${url}:
+
+${validationError.message}
+
+${seeMore}`;
         }
-        throw err;
+        return `Failed to parse validation response for ${url} - ${seeMore}`;
     }
 }
 function processValidationResult(validationResult) {
+    if (typeof validationResult === "string") {
+        return {
+            success: false,
+            resultText: validationResult,
+        };
+    }
     const seeMore = seeMoreMaker(validationResult.url);
     if (validationResult.numObjects === 0) {
         return {
@@ -35020,24 +35050,12 @@ async function run() {
         const results = [];
         for (const url of urls) {
             console.log(`Validating ${url} for structured data...`);
-            try {
-                const validationResult = processValidationResponse(await getValidationResponse(url));
-                const processedValidationResult = processValidationResult(validationResult);
-                results.push({
-                    url,
-                    processedValidationResult,
-                });
-            }
-            catch (err) {
-                console.error(`Failed to validate ${url}`, err);
-                results.push({
-                    url,
-                    processedValidationResult: {
-                        success: false,
-                        resultText: `Failed to validate ${url}. ${seeMoreMaker(url)}`,
-                    },
-                });
-            }
+            const validationResult = processValidationResponse(url, await getValidationResponse(url));
+            const processedValidationResult = processValidationResult(validationResult);
+            results.push({
+                url,
+                processedValidationResult,
+            });
         }
         core.setOutput("results", results);
         if (results.every((result) => result.processedValidationResult.success)) {

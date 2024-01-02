@@ -16,27 +16,17 @@ export async function run(): Promise<void> {
 		for (const url of urls) {
 			console.log(`Validating ${url} for structured data...`);
 
-			try {
-				const validationResult = processValidationResponse(
-					await getValidationResponse(url),
-				);
-				const processedValidationResult =
-					processValidationResult(validationResult);
+			const validationResult = processValidationResponse(
+				url,
+				await getValidationResponse(url),
+			);
+			const processedValidationResult =
+				processValidationResult(validationResult);
 
-				results.push({
-					url,
-					processedValidationResult,
-				});
-			} catch (err) {
-				console.error(`Failed to validate ${url}`, err);
-				results.push({
-					url,
-					processedValidationResult: {
-						success: false,
-						resultText: `Failed to validate ${url}. ${seeMoreMaker(url)}`,
-					},
-				});
-			}
+			results.push({
+				url,
+				processedValidationResult,
+			});
 		}
 
 		core.setOutput("results", results);

@@ -2,8 +2,8 @@
 
 exports[`processValidationResult > given errors returns unsuccessfully 1`] = `
 {
-  "resultText": "Validated https://deploy-preview-9669--docusaurus-2.netlify.app/blog/releases/2.4/ and failed with 1 errors and 0 warnings
-For more details see https://validator.schema.org/#url=https%3A%2F%2Fdeploy-preview-9669--docusaurus-2.netlify.app%2Fblog%2Freleases%2F2.4%2F
+  "resultText": "Validated https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/ and failed with 1 errors and 0 warnings
+For more details see https://validator.schema.org/#url=https%3A%2F%2Fthankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net%2F
 ",
   "success": false,
 }

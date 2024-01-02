@@ -18,7 +18,8 @@ export async function getValidationResponse(url: string): Promise<string> {
 		});
 
 		if (!response.ok) {
-			throw new Error(`Received a ${response.statusText}`);
+			console.error(`Received a ${response.statusText}`);
+			return "";
 		}
 
 		const text = await response.text();
@@ -26,27 +27,34 @@ export async function getValidationResponse(url: string): Promise<string> {
 		return text;
 	} catch (err) {
 		console.error(`Failed to get validation response for ${url}`, err);
-		throw new Error(`Failed to get validation response for ${url}`);
+		return "";
 	}
 }
 
 export function processValidationResponse(
+	url: string,
 	responseText: string,
-): ValidationResult {
-	try {
-		if (!responseText.indexOf("\n")) {
-			throw new Error(`Received an unexpected response:
+): ValidationResult | string {
+	const seeMore = seeMoreMaker(url);
 
-${responseText}`);
+	try {
+		if (!responseText) {
+			return `Received an empty response - ${seeMore}`;
+		}
+
+		if (!responseText.indexOf("\n")) {
+			return `Received an unexpected response:
+
+${responseText}
+
+${seeMore}`;
 		}
 
 		const json = responseText.substring(responseText.indexOf("\n"));
 		const validationResult = validationResultSchema.parse(JSON.parse(json));
 
 		if (validationResult.fetchError) {
-			throw new Error(
-				`Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid?`,
-			);
+			return `Received a fetchError from the validator: ${validationResult.fetchError} - is your URL valid? ${seeMore}`;
 		}
 
 		if (
@@ -55,11 +63,11 @@ ${responseText}`);
 			!validationResult.url ||
 			!validationResult.tripleGroups
 		) {
-			throw new Error(
-				`Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
+			return `Received an unexpected response, missing required properties of html, errors, url or tripleGroups:
 
-${responseText}`,
-			);
+${responseText}
+
+${seeMore}`;
 		}
 		return validationResult as ValidationResult;
 	} catch (err) {
@@ -67,14 +75,26 @@ ${responseText}`,
 			const validationError = fromZodError(err);
 
 			console.error(validationError);
+			return `Failed to parse validation response for ${url}:
+
+${validationError.message}
+
+${seeMore}`;
 		}
-		throw err;
+		return `Failed to parse validation response for ${url} - ${seeMore}`;
 	}
 }
 
 export function processValidationResult(
-	validationResult: ValidationResult,
+	validationResult: ValidationResult | string,
 ): ProcessedValidationResult {
+	if (typeof validationResult === "string") {
+		return {
+			success: false,
+			resultText: validationResult,
+		};
+	}
+
 	const seeMore = seeMoreMaker(validationResult.url);
 
 	if (validationResult.numObjects === 0) {

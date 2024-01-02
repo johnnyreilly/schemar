@@ -1,0 +1,3656 @@
+{
+	"url": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/",
+	"isRendered": true,
+	"tripleGroups": [
+		{
+			"ownerSet": {},
+			"nodes": [
+				{
+					"types": [
+						{
+							"pred": "itemtype",
+							"value": "Organization",
+							"errors": [],
+							"begin": 6000,
+							"end": 6014
+						},
+						{
+							"pred": "itemtype",
+							"value": "Brand",
+							"errors": [],
+							"begin": 6015,
+							"end": 6022
+						}
+					],
+					"typeGroup": "Organization / Brand",
+					"idProperty": {
+						"pred": "urn:spore:url",
+						"value": "https://johnnyreilly.com/about#organization",
+						"errors": [],
+						"begin": 5945,
+						"end": 5990
+					},
+					"errors": [],
+					"properties": [
+						{
+							"pred": "url",
+							"value": "https://johnnyreilly.com/",
+							"errors": [],
+							"begin": 6030,
+							"end": 6056
+						},
+						{
+							"pred": "name",
+							"value": "johnnyreilly",
+							"errors": [],
+							"begin": 6064,
+							"end": 6078
+						},
+						{
+							"pred": "description",
+							"value": "This is John Reilly\u0027s blog. John is an Open Source Software Engineer working on TypeScript, Azure, React, Node.js, .NET and more.",
+							"errors": [],
+							"begin": 6093,
+							"end": 6224
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://github.com/johnnyreilly",
+							"errors": [],
+							"begin": 6529,
+							"end": 6562
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://fosstodon.org/@johnny_reilly",
+							"errors": [],
+							"begin": 6563,
+							"end": 6601
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://twitter.com/johnny_reilly",
+							"errors": [],
+							"begin": 6602,
+							"end": 6637
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://dev.to/johnnyreilly",
+							"errors": [],
+							"begin": 6638,
+							"end": 6667
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://app.daily.dev/johnnyreilly",
+							"errors": [],
+							"begin": 6668,
+							"end": 6704
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://stackoverflow.com/users/761388/john-reilly",
+							"errors": [],
+							"begin": 6705,
+							"end": 6757
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://blog.logrocket.com/author/johnreilly/",
+							"errors": [],
+							"begin": 6758,
+							"end": 6805
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://www.reddit.com/user/johnny_reilly",
+							"errors": [],
+							"begin": 6806,
+							"end": 6849
+						},
+						{
+							"pred": "sameAs",
+							"value": "https://uk.linkedin.com/in/johnnyreilly",
+							"errors": [],
+							"begin": 6850,
+							"end": 6891
+						}
+					],
+					"nodeProperties": [
+						{
+							"pred": "logo",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "ImageObject",
+										"errors": [],
+										"begin": 6241,
+										"end": 6254
+									}
+								],
+								"typeGroup": "ImageObject",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://johnnyreilly.com/#logo",
+									"errors": [],
+									"begin": 6485,
+									"end": 6517
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "inLanguage",
+										"value": "en-UK",
+										"errors": [],
+										"begin": 6268,
+										"end": 6275
+									},
+									{
+										"pred": "url",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 6321,
+										"end": 6363
+									},
+									{
+										"pred": "contentUrl",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 6377,
+										"end": 6419
+									},
+									{
+										"pred": "width",
+										"value": "200",
+										"errors": [],
+										"begin": 6428,
+										"end": 6431
+									},
+									{
+										"pred": "height",
+										"value": "200",
+										"errors": [],
+										"begin": 6441,
+										"end": 6444
+									},
+									{
+										"pred": "caption",
+										"value": "John Reilly",
+										"errors": [],
+										"begin": 6455,
+										"end": 6468
+									}
+								],
+								"nodeProperties": [],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 6232,
+							"end": 6469
+						},
+						{
+							"pred": "image",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "ImageObject",
+										"errors": [],
+										"begin": 6241,
+										"end": 6254
+									}
+								],
+								"typeGroup": "ImageObject",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://johnnyreilly.com/#logo",
+									"errors": [],
+									"begin": 6485,
+									"end": 6517
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "inLanguage",
+										"value": "en-UK",
+										"errors": [],
+										"begin": 6268,
+										"end": 6275
+									},
+									{
+										"pred": "url",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 6321,
+										"end": 6363
+									},
+									{
+										"pred": "contentUrl",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 6377,
+										"end": 6419
+									},
+									{
+										"pred": "width",
+										"value": "200",
+										"errors": [],
+										"begin": 6428,
+										"end": 6431
+									},
+									{
+										"pred": "height",
+										"value": "200",
+										"errors": [],
+										"begin": 6441,
+										"end": 6444
+									},
+									{
+										"pred": "caption",
+										"value": "John Reilly",
+										"errors": [],
+										"begin": 6455,
+										"end": 6468
+									}
+								],
+								"nodeProperties": [],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 6478,
+							"end": 6518
+						}
+					],
+					"numErrors": 0,
+					"numWarnings": 0
+				}
+			],
+			"numNodesWithError": 0,
+			"numNodesWithWarning": 0,
+			"numErrors": 0,
+			"numWarnings": 0,
+			"type": "Organization / Brand"
+		},
+		{
+			"ownerSet": {},
+			"nodes": [
+				{
+					"types": [
+						{
+							"pred": "itemtype",
+							"value": "WebSite",
+							"errors": [],
+							"begin": 4117,
+							"end": 4126
+						}
+					],
+					"typeGroup": "WebSite",
+					"idProperty": {
+						"pred": "urn:spore:url",
+						"value": "https://johnnyreilly.com/",
+						"errors": [],
+						"begin": 4082,
+						"end": 4108
+					},
+					"errors": [],
+					"properties": [
+						{
+							"pred": "url",
+							"value": "https://johnnyreilly.com/",
+							"errors": [],
+							"begin": 4133,
+							"end": 4159
+						},
+						{
+							"pred": "name",
+							"value": "johnnyreilly",
+							"errors": [],
+							"begin": 4167,
+							"end": 4181
+						},
+						{
+							"pred": "description",
+							"value": "This is John Reilly\u0027s blog. John is an Open Source Software Engineer working on TypeScript, Azure, React, Node.js, .NET and more.",
+							"errors": [],
+							"begin": 4196,
+							"end": 4327
+						},
+						{
+							"pred": "inLanguage",
+							"value": "en-UK",
+							"errors": [],
+							"begin": 4648,
+							"end": 4655
+						}
+					],
+					"nodeProperties": [
+						{
+							"pred": "copyrightHolder",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "Blarg",
+										"errors": [
+											{
+												"ownerSet": { "SPORE": true },
+												"errorType": "INVALID_ITEMTYPE",
+												"args": ["Blarg"],
+												"begin": 4664,
+												"end": 5935,
+												"isSevere": true,
+												"errorID": 2,
+												"ownerToSeverity": { "SPORE": "ERROR" }
+											}
+										],
+										"begin": 4705,
+										"end": 4712
+									}
+								],
+								"typeGroup": "Blarg",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://johnnyreilly.com/about",
+									"errors": [],
+									"begin": 4664,
+									"end": 4696
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "name",
+										"value": "John Reilly",
+										"errors": [],
+										"begin": 4720,
+										"end": 4733
+									},
+									{
+										"pred": "alternateName",
+										"value": "Johnny Reilly",
+										"errors": [],
+										"begin": 4750,
+										"end": 4765
+									},
+									{
+										"pred": "description",
+										"value": "John is an Open Source Software Engineer working on TypeScript, Azure, React, Node.js, .NET and more. As well as writing code, John is a speaker at meetups, one of the founders of the TS Congress conference, and the author of the history of Definitely Typed, which he worked on in the early days of TypeScript.",
+										"errors": [],
+										"begin": 5032,
+										"end": 5344
+									},
+									{
+										"pred": "url",
+										"value": "https://johnnyreilly.com/",
+										"errors": [],
+										"begin": 5351,
+										"end": 5377
+									},
+									{
+										"pred": "email",
+										"value": "johnny_reilly@hotmail.com",
+										"errors": [],
+										"begin": 5512,
+										"end": 5539
+									},
+									{
+										"pred": "birthPlace",
+										"value": "Bristol",
+										"errors": [],
+										"begin": 5553,
+										"end": 5562
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://github.com/johnnyreilly",
+										"errors": [],
+										"begin": 5573,
+										"end": 5606
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://fosstodon.org/@johnny_reilly",
+										"errors": [],
+										"begin": 5607,
+										"end": 5645
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://twitter.com/johnny_reilly",
+										"errors": [],
+										"begin": 5646,
+										"end": 5681
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://dev.to/johnnyreilly",
+										"errors": [],
+										"begin": 5682,
+										"end": 5711
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://app.daily.dev/johnnyreilly",
+										"errors": [],
+										"begin": 5712,
+										"end": 5748
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://stackoverflow.com/users/761388/john-reilly",
+										"errors": [],
+										"begin": 5749,
+										"end": 5801
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://blog.logrocket.com/author/johnreilly/",
+										"errors": [],
+										"begin": 5802,
+										"end": 5849
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://www.reddit.com/user/johnny_reilly",
+										"errors": [],
+										"begin": 5850,
+										"end": 5893
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://uk.linkedin.com/in/johnnyreilly",
+										"errors": [],
+										"begin": 5894,
+										"end": 5935
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "image",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "ImageObject",
+													"errors": [],
+													"begin": 4783,
+													"end": 4796
+												}
+											],
+											"typeGroup": "ImageObject",
+											"idProperty": {
+												"pred": "urn:spore:url",
+												"value": "https://johnnyreilly.com/about#image",
+												"errors": [],
+												"begin": 4824,
+												"end": 4862
+											},
+											"errors": [],
+											"properties": [
+												{
+													"pred": "inLanguage",
+													"value": "en-UK",
+													"errors": [],
+													"begin": 4810,
+													"end": 4817
+												},
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/img/profile.jpg",
+													"errors": [],
+													"begin": 4869,
+													"end": 4911
+												},
+												{
+													"pred": "contentUrl",
+													"value": "https://johnnyreilly.com/img/profile.jpg",
+													"errors": [],
+													"begin": 4925,
+													"end": 4967
+												},
+												{
+													"pred": "width",
+													"value": "200",
+													"errors": [],
+													"begin": 4976,
+													"end": 4979
+												},
+												{
+													"pred": "height",
+													"value": "200",
+													"errors": [],
+													"begin": 4989,
+													"end": 4992
+												},
+												{
+													"pred": "caption",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 5003,
+													"end": 5016
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 4774,
+										"end": 5017
+									},
+									{
+										"pred": "address",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "PostalAddress",
+													"errors": [],
+													"begin": 5397,
+													"end": 5412
+												}
+											],
+											"typeGroup": "PostalAddress",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "streetAddress",
+													"value": "Twickenham",
+													"errors": [],
+													"begin": 5429,
+													"end": 5441
+												},
+												{
+													"pred": "addressLocality",
+													"value": "London",
+													"errors": [],
+													"begin": 5460,
+													"end": 5468
+												}
+											],
+											"nodeProperties": [
+												{
+													"pred": "addressCountry",
+													"target": {
+														"types": [
+															{
+																"pred": "itemtype",
+																"value": "Country",
+																"errors": [],
+																"begin": 5486,
+																"end": 5502
+															}
+														],
+														"typeGroup": "Country",
+														"errors": [],
+														"properties": [
+															{
+																"pred": "name",
+																"value": "United Kingdom",
+																"errors": [],
+																"begin": 5486,
+																"end": 5502
+															}
+														],
+														"nodeProperties": [],
+														"numErrors": 0,
+														"numWarnings": 0
+													},
+													"errors": [],
+													"begin": 5486,
+													"end": 5502
+												}
+											],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 5388,
+										"end": 5503
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [
+								{
+									"ownerSet": { "SPORE": true },
+									"errorType": "INVALID_OBJECT",
+									"args": [
+										"copyrightHolder",
+										"Blarg",
+										"Organization,http://schema.org/Person,http://schema.org/Role,http://schema.org/Thing"
+									],
+									"begin": 4346,
+									"end": 4386,
+									"isSevere": true,
+									"errorID": 0,
+									"ownerToSeverity": { "SPORE": "ERROR" }
+								}
+							],
+							"begin": 4346,
+							"end": 4386
+						},
+						{
+							"pred": "publisher",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "Blarg",
+										"errors": [
+											{
+												"ownerSet": { "SPORE": true },
+												"errorType": "INVALID_ITEMTYPE",
+												"args": ["Blarg"],
+												"begin": 4664,
+												"end": 5935,
+												"isSevere": true,
+												"errorID": 2,
+												"ownerToSeverity": { "SPORE": "ERROR" }
+											}
+										],
+										"begin": 4705,
+										"end": 4712
+									}
+								],
+								"typeGroup": "Blarg",
+								"idProperty": {
+									"pred": "urn:spore:url",
+									"value": "https://johnnyreilly.com/about",
+									"errors": [],
+									"begin": 4664,
+									"end": 4696
+								},
+								"errors": [],
+								"properties": [
+									{
+										"pred": "name",
+										"value": "John Reilly",
+										"errors": [],
+										"begin": 4720,
+										"end": 4733
+									},
+									{
+										"pred": "alternateName",
+										"value": "Johnny Reilly",
+										"errors": [],
+										"begin": 4750,
+										"end": 4765
+									},
+									{
+										"pred": "description",
+										"value": "John is an Open Source Software Engineer working on TypeScript, Azure, React, Node.js, .NET and more. As well as writing code, John is a speaker at meetups, one of the founders of the TS Congress conference, and the author of the history of Definitely Typed, which he worked on in the early days of TypeScript.",
+										"errors": [],
+										"begin": 5032,
+										"end": 5344
+									},
+									{
+										"pred": "url",
+										"value": "https://johnnyreilly.com/",
+										"errors": [],
+										"begin": 5351,
+										"end": 5377
+									},
+									{
+										"pred": "email",
+										"value": "johnny_reilly@hotmail.com",
+										"errors": [],
+										"begin": 5512,
+										"end": 5539
+									},
+									{
+										"pred": "birthPlace",
+										"value": "Bristol",
+										"errors": [],
+										"begin": 5553,
+										"end": 5562
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://github.com/johnnyreilly",
+										"errors": [],
+										"begin": 5573,
+										"end": 5606
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://fosstodon.org/@johnny_reilly",
+										"errors": [],
+										"begin": 5607,
+										"end": 5645
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://twitter.com/johnny_reilly",
+										"errors": [],
+										"begin": 5646,
+										"end": 5681
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://dev.to/johnnyreilly",
+										"errors": [],
+										"begin": 5682,
+										"end": 5711
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://app.daily.dev/johnnyreilly",
+										"errors": [],
+										"begin": 5712,
+										"end": 5748
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://stackoverflow.com/users/761388/john-reilly",
+										"errors": [],
+										"begin": 5749,
+										"end": 5801
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://blog.logrocket.com/author/johnreilly/",
+										"errors": [],
+										"begin": 5802,
+										"end": 5849
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://www.reddit.com/user/johnny_reilly",
+										"errors": [],
+										"begin": 5850,
+										"end": 5893
+									},
+									{
+										"pred": "sameAs",
+										"value": "https://uk.linkedin.com/in/johnnyreilly",
+										"errors": [],
+										"begin": 5894,
+										"end": 5935
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "image",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "ImageObject",
+													"errors": [],
+													"begin": 4783,
+													"end": 4796
+												}
+											],
+											"typeGroup": "ImageObject",
+											"idProperty": {
+												"pred": "urn:spore:url",
+												"value": "https://johnnyreilly.com/about#image",
+												"errors": [],
+												"begin": 4824,
+												"end": 4862
+											},
+											"errors": [],
+											"properties": [
+												{
+													"pred": "inLanguage",
+													"value": "en-UK",
+													"errors": [],
+													"begin": 4810,
+													"end": 4817
+												},
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/img/profile.jpg",
+													"errors": [],
+													"begin": 4869,
+													"end": 4911
+												},
+												{
+													"pred": "contentUrl",
+													"value": "https://johnnyreilly.com/img/profile.jpg",
+													"errors": [],
+													"begin": 4925,
+													"end": 4967
+												},
+												{
+													"pred": "width",
+													"value": "200",
+													"errors": [],
+													"begin": 4976,
+													"end": 4979
+												},
+												{
+													"pred": "height",
+													"value": "200",
+													"errors": [],
+													"begin": 4989,
+													"end": 4992
+												},
+												{
+													"pred": "caption",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 5003,
+													"end": 5016
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 4774,
+										"end": 5017
+									},
+									{
+										"pred": "address",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "PostalAddress",
+													"errors": [],
+													"begin": 5397,
+													"end": 5412
+												}
+											],
+											"typeGroup": "PostalAddress",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "streetAddress",
+													"value": "Twickenham",
+													"errors": [],
+													"begin": 5429,
+													"end": 5441
+												},
+												{
+													"pred": "addressLocality",
+													"value": "London",
+													"errors": [],
+													"begin": 5460,
+													"end": 5468
+												}
+											],
+											"nodeProperties": [
+												{
+													"pred": "addressCountry",
+													"target": {
+														"types": [
+															{
+																"pred": "itemtype",
+																"value": "Country",
+																"errors": [],
+																"begin": 5486,
+																"end": 5502
+															}
+														],
+														"typeGroup": "Country",
+														"errors": [],
+														"properties": [
+															{
+																"pred": "name",
+																"value": "United Kingdom",
+																"errors": [],
+																"begin": 5486,
+																"end": 5502
+															}
+														],
+														"nodeProperties": [],
+														"numErrors": 0,
+														"numWarnings": 0
+													},
+													"errors": [],
+													"begin": 5486,
+													"end": 5502
+												}
+											],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 5388,
+										"end": 5503
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [
+								{
+									"ownerSet": { "SPORE": true },
+									"errorType": "INVALID_OBJECT",
+									"args": [
+										"publisher",
+										"Blarg",
+										"Organization,http://schema.org/Person,http://schema.org/Role,http://schema.org/Thing"
+									],
+									"begin": 4399,
+									"end": 4439,
+									"isSevere": true,
+									"errorID": 1,
+									"ownerToSeverity": { "SPORE": "ERROR" }
+								}
+							],
+							"begin": 4399,
+							"end": 4439
+						},
+						{
+							"pred": "potentialAction",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "SearchAction",
+										"errors": [],
+										"begin": 4467,
+										"end": 4481
+									}
+								],
+								"typeGroup": "SearchAction",
+								"errors": [],
+								"properties": [],
+								"nodeProperties": [
+									{
+										"pred": "target",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "EntryPoint",
+													"errors": [],
+													"begin": 4500,
+													"end": 4512
+												}
+											],
+											"typeGroup": "EntryPoint",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "urlTemplate",
+													"value": "https://johnnyreilly.com/search?q\u003d{search_term_string}",
+													"errors": [],
+													"begin": 4527,
+													"end": 4583
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 4491,
+										"end": 4584
+									},
+									{
+										"pred": "query-input",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "PropertyValueSpecification",
+													"errors": [],
+													"begin": 4599,
+													"end": 4633
+												}
+											],
+											"typeGroup": "PropertyValueSpecification",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "valueRequired",
+													"value": "http://schema.org/True",
+													"errors": [],
+													"begin": 4599,
+													"end": 4633
+												},
+												{
+													"pred": "valueName",
+													"value": "search_term_string",
+													"errors": [],
+													"begin": 4599,
+													"end": 4633
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 4599,
+										"end": 4633
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 4458,
+							"end": 4634
+						}
+					],
+					"numErrors": 4,
+					"numWarnings": 0
+				}
+			],
+			"numNodesWithError": 1,
+			"numNodesWithWarning": 0,
+			"numErrors": 4,
+			"numWarnings": 0,
+			"type": "WebSite"
+		},
+		{
+			"ownerSet": {},
+			"nodes": [
+				{
+					"types": [
+						{
+							"pred": "itemtype",
+							"value": "Blog",
+							"errors": [],
+							"begin": 14485,
+							"end": 83906
+						}
+					],
+					"typeGroup": "Blog",
+					"errors": [],
+					"properties": [],
+					"nodeProperties": [
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 14558,
+										"end": 18116
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "This post demonstrates how to write high quality and low effort log assertions using snapshot testing.",
+										"errors": [],
+										"begin": 14668,
+										"end": 14810
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-86eb28c76643a3ea99cad34ff1006d94.png",
+										"errors": [],
+										"begin": 14810,
+										"end": 14928
+									},
+									{
+										"pred": "headline",
+										"value": "Snapshot log tests in .NET",
+										"errors": [],
+										"begin": 14936,
+										"end": 15066
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/snapshot-log-tests-dotnet",
+										"errors": [],
+										"begin": 14979,
+										"end": 15061
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-12-20T00:00:00+00:00",
+										"errors": [],
+										"begin": 15110,
+										"end": 15201
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 15466,
+										"end": 15575
+									},
+									{
+										"pred": "articleBody",
+										"value": "Writing tests is important. The easier it is to write tests, the more likely they\u0027ll be written. I\u0027ve long loved snapshot testing for this reason. Snapshot testing takes away the need to manually write verification code in your tests. Instead, you write tests that compare the output of a call to your method with JSON serialised output you\u0027ve generated on a previous occasion. This approach takes less time to write, less time to maintain, and the solid readability of JSON makes it more likely you\u0027ll pick up on bugs. It\u0027s so much easier to scan JSON than it is a list of assertions. Loving snapshot testing as I do, I want to show you how to write high quality and low effort log assertions using snapshot testing. The behaviour of logging code is really important; it\u0027s this that we tend to rely upon when debugging production issues. But how do you test logging code? Well, you could write a bunch of assertions that check how your logger is used. But that\u0027s a lot of work, it\u0027s not super readable and it\u0027s not fun. (Always remember: if it\u0027s not fun, you\u0027re doing it wrong.) Instead, we\u0027ll achieve this using snapshot testing.",
+										"errors": [],
+										"begin": 15998,
+										"end": 17515
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 15579,
+													"end": 15971
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 15700,
+													"end": 15842
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 15798,
+													"end": 15838
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 15848,
+													"end": 15965
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 15579,
+										"end": 15971
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 14558,
+							"end": 18116
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 18116,
+										"end": 21612
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Bun is a new, fast, TypeScript-first, npm compatible-first JavaScript runtime. This is a walkthrough of it!",
+										"errors": [],
+										"begin": 18226,
+										"end": 18373
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-139903f2eb6662dd8703dcd2844cf6ce.png",
+										"errors": [],
+										"begin": 18373,
+										"end": 18491
+									},
+									{
+										"pred": "headline",
+										"value": "Overview of Bun, a JavaScript runtime",
+										"errors": [],
+										"begin": 18499,
+										"end": 18627
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/bun-overview",
+										"errors": [],
+										"begin": 18542,
+										"end": 18622
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-12-15T00:00:00+00:00",
+										"errors": [],
+										"begin": 18671,
+										"end": 18762
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 19028,
+										"end": 19137
+									},
+									{
+										"pred": "image",
+										"value": "https://media.licdn.com/dms/image/C4D03AQFSGZ5WM0U3MQ/profile-displayphoto-shrink_800_800/0/1516959703212?e\u003d1705536000\u0026v\u003dbeta\u0026t\u003d3JcqFyOGoIFse9XyBD3KZCPb3Z4hEPgbj-8dgcDfxWQ",
+										"errors": [],
+										"begin": 19740,
+										"end": 19986
+									},
+									{
+										"pred": "articleBody",
+										"value": "Like Node.js and Deno, Bun is a JavaScript runtime that provides a faster development experience while you’re building frontend applications. It’s gaining ground as a competitor to these widely used runtime environments — and for good reason. In this evaluation guide, we’ll explore the features that make Bun an excellent choice for developing fast, performant, error-free frontend apps. By the end of this article, you’ll have a clear understanding of when and why you should use Bun in your projects.",
+										"errors": [],
+										"begin": 20386,
+										"end": 21218
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 19141,
+													"end": 19533
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 19262,
+													"end": 19404
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 19360,
+													"end": 19400
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 19410,
+													"end": 19527
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 19141,
+										"end": 19533
+									},
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 19990,
+													"end": 20359
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://www.linkedin.com/in/leemeganj/",
+													"errors": [],
+													"begin": 20111,
+													"end": 20259
+												},
+												{
+													"pred": "name",
+													"value": "Megan Lee",
+													"errors": [],
+													"begin": 20217,
+													"end": 20255
+												},
+												{
+													"pred": "description",
+													"value": "Content Marketing Manager",
+													"errors": [],
+													"begin": 20265,
+													"end": 20353
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 19990,
+										"end": 20359
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 18116,
+							"end": 21612
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 21612,
+										"end": 25994
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "In October 2022 traffic to my site tanked. Growtika collaborated with me to fix it. This is what we did. Read it if you\u0027re trying to improve your SEO.",
+										"errors": [],
+										"begin": 21722,
+										"end": 21917
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-0c20a57cb29b05a6a5ebae9048331c25.png",
+										"errors": [],
+										"begin": 21917,
+										"end": 22035
+									},
+									{
+										"pred": "headline",
+										"value": "How we fixed my SEO",
+										"errors": [],
+										"begin": 22043,
+										"end": 22160
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/how-we-fixed-my-seo",
+										"errors": [],
+										"begin": 22086,
+										"end": 22155
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-11-28T00:00:00+00:00",
+										"errors": [],
+										"begin": 22204,
+										"end": 22295
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 22561,
+										"end": 22670
+									},
+									{
+										"pred": "image",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/assets/images/growtika-logo-ca1a028245bd9fbc6dda9cffd0e47f80.webp",
+										"errors": [],
+										"begin": 23256,
+										"end": 23388
+									},
+									{
+										"pred": "articleBody",
+										"value": "We might also call this: I ruined my SEO and a stranger from Hacker News help me fix it​ This is a follow up to my \"How I ruined my SEO\" post. That was about how my site stopped ranking in Google\u0027s search results around October 2022. This post is about how Growtika and I worked together to fix it. As we\u0027ll see, the art of SEO (Search Engine Optimisation) is a mysterious one. We made a number of changes that we believe helped. All told, my site spent about a year out in the cold - barely surfacing in search results. But in October 2023 it started ranking again. And it\u0027s been ranking ever since. I put that down to the assistance rendered by Growtika. What was the nature of that assistance? I\u0027ll tell you. This post is a biggie; so buckle up!",
+										"errors": [],
+										"begin": 23849,
+										"end": 25389
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 22674,
+													"end": 23066
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 22795,
+													"end": 22937
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 22893,
+													"end": 22933
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 22943,
+													"end": 23060
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 22674,
+										"end": 23066
+									},
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 23392,
+													"end": 23822
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://growtika.com/",
+													"errors": [],
+													"begin": 23513,
+													"end": 23643
+												},
+												{
+													"pred": "name",
+													"value": "Growtika",
+													"errors": [],
+													"begin": 23602,
+													"end": 23639
+												},
+												{
+													"pred": "description",
+													"value": "A dedicated SEO and growth marketing firm for dev-focused, cybersecurity, fintech and deep tech startups",
+													"errors": [],
+													"begin": 23649,
+													"end": 23816
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 23392,
+										"end": 23822
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 21612,
+							"end": 25994
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 25994,
+										"end": 29059
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Learn how to get the Azure Active Directory group names and ids from the Graph API using the C# SDK.",
+										"errors": [],
+										"begin": 26104,
+										"end": 26244
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-6d92def2e18c2d0c25e0676cc8c1525a.png",
+										"errors": [],
+										"begin": 26244,
+										"end": 26362
+									},
+									{
+										"pred": "headline",
+										"value": "Graph API: getting users Active Directory group names and ids with the C# SDK",
+										"errors": [],
+										"begin": 26370,
+										"end": 26570
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/graph-api-ad-users-group-name-ids-csharp-sdk",
+										"errors": [],
+										"begin": 26413,
+										"end": 26565
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-11-23T00:00:00+00:00",
+										"errors": [],
+										"begin": 26614,
+										"end": 26705
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 26970,
+										"end": 27079
+									},
+									{
+										"pred": "articleBody",
+										"value": "The Graph API is a great way to get information about users in Azure Active Directory. I recently needed to get the names and ids of the Active Directory groups that a user was a member of. Here\u0027s how to do it with the C# SDK. I\u0027m writing this post as, whilst it ends up being a relatively small amount of code and configuration required, if you don\u0027t know what that is, you can end up somewhat stuck. This should hopefully unstick you.",
+										"errors": [],
+										"begin": 27502,
+										"end": 28324
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 27083,
+													"end": 27475
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 27204,
+													"end": 27346
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 27302,
+													"end": 27342
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 27352,
+													"end": 27469
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 27083,
+										"end": 27475
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 25994,
+							"end": 29059
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 29059,
+										"end": 32548
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Learn how to migrate a TypeScript Azure Functions app to the v4 Node.js programming model.",
+										"errors": [],
+										"begin": 29169,
+										"end": 29299
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-e16bb3c85ded7aa934b9ef8a41a2541a.png",
+										"errors": [],
+										"begin": 29299,
+										"end": 29417
+									},
+									{
+										"pred": "headline",
+										"value": "Migrating to v4 Azure Functions Node.js with TypeScript",
+										"errors": [],
+										"begin": 29425,
+										"end": 29606
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/migrating-azure-functions-node-js-v4-typescript",
+										"errors": [],
+										"begin": 29468,
+										"end": 29601
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-10-24T00:00:00+00:00",
+										"errors": [],
+										"begin": 29650,
+										"end": 29740
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 30005,
+										"end": 30114
+									},
+									{
+										"pred": "articleBody",
+										"value": "There\u0027s a new programming model available for Node.js Azure Functions known as v4. There\u0027s documentation out there for how to migrate JavaScript Azure Functions from v3 to v4, but at the time of writing, TypeScript wasn\u0027t covered. This post fills in the gaps for a TypeScript Azure Function. It\u0027s probably worth mentioning that my blog is an Azure Static Web App with a TypeScript Node.js Azure Functions back end. So, this post is based on my experience migrating my blog to v4.",
+										"errors": [],
+										"begin": 30537,
+										"end": 31765
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 30118,
+													"end": 30510
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 30239,
+													"end": 30381
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 30337,
+													"end": 30377
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 30387,
+													"end": 30504
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 30118,
+										"end": 30510
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 29059,
+							"end": 32548
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 32548,
+										"end": 35603
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Learn how to link Azure Application Insights to an Azure Static Web App using Bicep.",
+										"errors": [],
+										"begin": 32658,
+										"end": 32782
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-bd6790656cd89e64fd25edbe986a6759.png",
+										"errors": [],
+										"begin": 32782,
+										"end": 32900
+									},
+									{
+										"pred": "headline",
+										"value": "Bicep: Link Azure Application Insights to Static Web Apps",
+										"errors": [],
+										"begin": 32908,
+										"end": 33100
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/bicep-link-azure-application-insights-to-static-web-apps",
+										"errors": [],
+										"begin": 32951,
+										"end": 33095
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-10-18T00:00:00+00:00",
+										"errors": [],
+										"begin": 33144,
+										"end": 33234
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 33499,
+										"end": 33608
+									},
+									{
+										"pred": "articleBody",
+										"value": "If you\u0027re looking into a Production issue with your Azure Static Web App, you\u0027ll want to be able to get to your logs as fast as possible. You can do this by linking your Static Web App to an Azure Application Insights instance. If you\u0027ve used the Azure Portal to create your Static Web App, the setup phase will likely have done this for you already. But if you\u0027re using Bicep to create your Static Web App, you\u0027ll need to do this yourself. This post will show you how to do that using Bicep.",
+										"errors": [],
+										"begin": 34031,
+										"end": 34929
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 33612,
+													"end": 34004
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 33733,
+													"end": 33875
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 33831,
+													"end": 33871
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 33881,
+													"end": 33998
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 33612,
+										"end": 34004
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 32548,
+							"end": 35603
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 35603,
+										"end": 38528
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Learn how to migrate rehype plugins to Docusaurus 3.",
+										"errors": [],
+										"begin": 35713,
+										"end": 35805
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-f54fd33f2e27f07de2f06c9b9217eeeb.png",
+										"errors": [],
+										"begin": 35805,
+										"end": 35923
+									},
+									{
+										"pred": "headline",
+										"value": "Docusaurus 3: how to migrate rehype plugins",
+										"errors": [],
+										"begin": 35931,
+										"end": 36095
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/docusaurus-3-how-to-migrate-rehype-plugins",
+										"errors": [],
+										"begin": 35974,
+										"end": 36090
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-10-09T00:00:00+00:00",
+										"errors": [],
+										"begin": 36139,
+										"end": 36228
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 36494,
+										"end": 36603
+									},
+									{
+										"pred": "articleBody",
+										"value": "Docusaurus v3 is on the way. One of the big changes that is coming with Docusaurus 3 is MDX 3. My blog has been built with Docusaurus 2 and I have a number of rehype plugins that I use to improve the experience of the blog. These include:  a plugin to improve Core Web Vitals with fetchpriority / lazy loading a plugin to serving Docusaurus images with Cloudinary  I wanted to migrate these plugins to Docusaurus 3. This post is about how I did that - and if you\u0027ve got a rehype plugin it could probably provide some guidance on the changes you\u0027d need to make.",
+										"errors": [],
+										"begin": 37026,
+										"end": 38084
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 36607,
+													"end": 36999
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 36728,
+													"end": 36870
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 36826,
+													"end": 36866
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 36876,
+													"end": 36993
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 36607,
+										"end": 36999
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 35603,
+							"end": 38528
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 38528,
+										"end": 44224
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Use the TypeScript Azure Open AI SDK to generate article metadata.",
+										"errors": [],
+										"begin": 38638,
+										"end": 38744
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-8073436bce980c6c577b07d612072b84.png",
+										"errors": [],
+										"begin": 38744,
+										"end": 38862
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Open AI: generate article metadata with TypeScript",
+										"errors": [],
+										"begin": 38870,
+										"end": 39060
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-open-ai-generate-article-metadata-with-typescript",
+										"errors": [],
+										"begin": 38913,
+										"end": 39055
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-09-25T00:00:00+00:00",
+										"errors": [],
+										"begin": 39104,
+										"end": 39196
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 39462,
+										"end": 39571
+									},
+									{
+										"pred": "articleBody",
+										"value": "This post grew out of my desire to improve the metadata for my blog posts. I have been blogging for more than ten years, and the majority of my posts lack descriptions. A description is meta tag that sits in a page and describes the contents of the page. This is what this posts description meta tag looks like in HTML: \u003cmeta  name\u003d\"description\"  content\u003d\"Use the TypeScript Azure Open AI SDK to generate article metadata.\" /\u003e  Descriptions are important for search engine optimisation (SEO) and for accessibility. You can read up more on the topic here. I wanted to have descriptions for all my blog posts. But writing around 230 descriptions for my existing posts was not something I wanted to do manually. I wanted to automate it.",
+										"errors": [],
+										"begin": 39994,
+										"end": 43664
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 39575,
+													"end": 39967
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 39696,
+													"end": 39838
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 39794,
+													"end": 39834
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 39844,
+													"end": 39961
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 39575,
+										"end": 39967
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 38528,
+							"end": 44224
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 44224,
+										"end": 46980
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "A documentary has been made about TypeScript and I feature in the story of how it came to be what it is today.",
+										"errors": [],
+										"begin": 44334,
+										"end": 44484
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/typescript-the-movie-da6561cb6a91577c867dbcaea0c94df3.webp",
+										"errors": [],
+										"begin": 44484,
+										"end": 44612
+									},
+									{
+										"pred": "headline",
+										"value": "TypeScript: The Movie",
+										"errors": [],
+										"begin": 44620,
+										"end": 44742
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/typescript-documentary",
+										"errors": [],
+										"begin": 44663,
+										"end": 44737
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-09-20T00:00:00+00:00",
+										"errors": [],
+										"begin": 44786,
+										"end": 44878
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 45145,
+										"end": 45254
+									},
+									{
+										"pred": "articleBody",
+										"value": "I am excited to announce that a documentary has been made about TypeScript! It premiered on YouTube at 5pm British Summertime September 21st 2023.  I had the good fortune to be involved in the making of the documentary. In part this was thanks to my work on Definitely Typed. Another reason was my work on recording the history of DefinitelyTyped. You can see it on YouTube here or hit play on the embedded video above. Thanks to the Keyboard Stories team for making this happen!",
+										"errors": [],
+										"begin": 45677,
+										"end": 46732
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 45258,
+													"end": 45650
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 45379,
+													"end": 45521
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 45477,
+													"end": 45517
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 45527,
+													"end": 45644
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 45258,
+										"end": 45650
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 44224,
+							"end": 46980
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 46980,
+										"end": 50731
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "This post details how to control the capacity of an Azure Open AI deployment with Bicep so that you don\u0027t exceed your quota.",
+										"errors": [],
+										"begin": 47090,
+										"end": 47259
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-015ac7f920c42c69f461711f0fd46156.png",
+										"errors": [],
+										"begin": 47259,
+										"end": 47377
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Open AI: handling capacity and quota limits with Bicep",
+										"errors": [],
+										"begin": 47385,
+										"end": 47558
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-open-ai-capacity-quota-bicep",
+										"errors": [],
+										"begin": 47428,
+										"end": 47553
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-08-17T00:00:00+00:00",
+										"errors": [],
+										"begin": 47602,
+										"end": 47691
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 47956,
+										"end": 48065
+									},
+									{
+										"pred": "articleBody",
+										"value": "We\u0027re currently in the gold rush period of AI. The world cannot get enough. A consequence of this, is that rationing is in force. It\u0027s like the end of the second world war, but with GPUs. This is a good thing, because it means that we can\u0027t just spin up as many resources as we like. It\u0027s a bad thing, for the exact same reason. If you\u0027re making use of Azure\u0027s Open AI resources for your AI needs, you\u0027ll be aware that there are limits known as \"quotas\" in place. If you\u0027re looking to control how many resources you\u0027re using, you\u0027ll want to be able to control the capacity of your deployments. This is possible with Bicep. This post grew out of a GitHub issue around the topic where people were bumping on the message the capacity should be null for standard deployment as they attempted to deploy. At the time that issue was raised, there was very little documentation on how to handle this. Since then, things have improved, but I thought it would be useful to have a post on the topic.",
+										"errors": [],
+										"begin": 48488,
+										"end": 50198
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 48069,
+													"end": 48461
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 48190,
+													"end": 48332
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 48288,
+													"end": 48328
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 48338,
+													"end": 48455
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 48069,
+										"end": 48461
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 46980,
+							"end": 50731
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 50731,
+										"end": 53646
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "This post details how to integrate the test runner Vitest with Azure Pipelines.",
+										"errors": [],
+										"begin": 50841,
+										"end": 50960
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-29f5f663eb5da2a98325dc6ad5967e95.png",
+										"errors": [],
+										"begin": 50960,
+										"end": 51078
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Pipelines meet Vitest",
+										"errors": [],
+										"begin": 51086,
+										"end": 51219
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-pipelines-meet-vitest",
+										"errors": [],
+										"begin": 51129,
+										"end": 51214
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-08-05T00:00:00+00:00",
+										"errors": [],
+										"begin": 51263,
+										"end": 51351
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 51616,
+										"end": 51725
+									},
+									{
+										"pred": "articleBody",
+										"value": "This post explains how to integrate the tremendous test runner Vitest with the continuous integration platform Azure Pipelines. If you read the post on integrating with Jest, you\u0027ll recognise a lot of common ground with this. Once again we want:  Tests run as part of our pipeline A failing test fails the build Test results reported in Azure Pipelines UI",
+										"errors": [],
+										"begin": 52148,
+										"end": 53109
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 51729,
+													"end": 52121
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 51850,
+													"end": 51992
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 51948,
+													"end": 51988
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 51998,
+													"end": 52115
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 51729,
+										"end": 52121
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 50731,
+							"end": 53646
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 53646,
+										"end": 56774
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Azure Container Apps supports custom domains with \"bring your own certificates\" and this post demonstrates how to do it with Bicep.",
+										"errors": [],
+										"begin": 53756,
+										"end": 53937
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-e7c5444789e1c0a09f5a45243fbc0b18.png",
+										"errors": [],
+										"begin": 53937,
+										"end": 54055
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Container Apps, Bicep, bring your own certificates and custom domains",
+										"errors": [],
+										"begin": 54063,
+										"end": 54286
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-container-apps-bicep-bring-your-own-certificates-custom-domains",
+										"errors": [],
+										"begin": 54106,
+										"end": 54281
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-07-20T00:00:00+00:00",
+										"errors": [],
+										"begin": 54330,
+										"end": 54417
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 54682,
+										"end": 54791
+									},
+									{
+										"pred": "articleBody",
+										"value": "Azure Container Apps supports custom domains via certificates. If you\u0027re looking to make use of the managed certificates in Azure Container Apps using Bicep, then you might want to take a look at this post on the topic. This post will instead look at how we can use the \"bring your own certificates\" approach in Azure Container Apps using Bicep. Well, as much as that is possible; there appear to be limitations in what can be achieved with Bicep at the time of writing.",
+										"errors": [],
+										"begin": 55214,
+										"end": 56161
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 54795,
+													"end": 55187
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 54916,
+													"end": 55058
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 55014,
+													"end": 55054
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 55064,
+													"end": 55181
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 54795,
+										"end": 55187
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 53646,
+							"end": 56774
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 56774,
+										"end": 60462
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "With TypeScript 5.1, it becomes possible for libraries to control what types are used for JSX elements. This post looks at why this matters.",
+										"errors": [],
+										"begin": 56884,
+										"end": 57064
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-c27519b13ccfb42822abd1b70624ae01.png",
+										"errors": [],
+										"begin": 57064,
+										"end": 57182
+									},
+									{
+										"pred": "headline",
+										"value": "TypeScript 5.1: declaring JSX element types",
+										"errors": [],
+										"begin": 57190,
+										"end": 57354
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/typescript-5-1-declaring-jsx-element-types",
+										"errors": [],
+										"begin": 57233,
+										"end": 57349
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-07-09T00:00:00+00:00",
+										"errors": [],
+										"begin": 57398,
+										"end": 57484
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 57749,
+										"end": 57858
+									},
+									{
+										"pred": "articleBody",
+										"value": "A new feature arrives with TypeScript 5.1, it is described as \"Decoupled Type-Checking Between JSX Elements and JSX Tag Types\". It\u0027s all about handing control of JSX type definitions to libraries. With this feature, libraries can control what types are used for JSX elements. Why does this matter? Great question! Until version 5.1, TypeScript did an imperfect job of representing what is possible with JSX. This feature allows libraries to do a better job of that, and we\u0027ll look into it in this post. It\u0027s probably worth saying, that this is a complicated feature. If you don\u0027t understand it (and as the author of this post I\u0027ll confess that I had to work quite hard to understand it), that is okay. This is a low level feature that is only likely to be used by library / type definition authors. It\u0027s a primitive that will unlock possibilites for people writing JSX - but it\u0027s something that people will mainly feel the benefit of, without directly doing anything themselves, or necessarily noticing that things have changed for the better.",
+										"errors": [],
+										"begin": 58281,
+										"end": 59928
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 57862,
+													"end": 58254
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 57983,
+													"end": 58125
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 58081,
+													"end": 58121
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 58131,
+													"end": 58248
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 57862,
+										"end": 58254
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 56774,
+							"end": 60462
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 60462,
+										"end": 64535
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Azure Container Apps support managed certificates and custom domains. However, deploying them with Bicep is not straightforward. This post explains how to do it.",
+										"errors": [],
+										"begin": 60572,
+										"end": 60773
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-99eeb529f7c75744d9f6863f82b04880.png",
+										"errors": [],
+										"begin": 60773,
+										"end": 60891
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Container Apps, Bicep, managed certificates and custom domains",
+										"errors": [],
+										"begin": 60899,
+										"end": 61108
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-container-apps-bicep-managed-certificates-custom-domains",
+										"errors": [],
+										"begin": 60942,
+										"end": 61103
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-06-18T00:00:00+00:00",
+										"errors": [],
+										"begin": 61152,
+										"end": 61239
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 61504,
+										"end": 61613
+									},
+									{
+										"pred": "articleBody",
+										"value": "Azure Container Apps support managed certificates and custom domains. However, deploying them with Bicep is not straightforward - although it is possible. It seems likely there\u0027s a bug in the implementation in Azure, but I\u0027m not sure. Either way, it\u0027s possible to deploy managed certificates and custom domains using Bicep. You just need to know how. If, instead, you\u0027re looking to make use of the \"bring your own certificates\" approach in Azure Container Apps using Bicep, then you might want to take a look at this post on the topic. I\u0027ve facetiously subtitled this post \"a three pipe(line) problem\" because it took three Azure Pipelines to get it working. This is not Azure Pipelines specific though, it\u0027s just that I was using Azure Pipelines to deploy the Bicep. Really, this applies to any way of deploying Bicep. GitHub Actions, Azure CLI or whatever. If you\u0027re here because you\u0027ve encountered the dread message:  Creating managed certificate requires hostname \u0027....\u0027 added as a custom hostname to a container app in environment \u0027caenv-appname-dev\u0027  Then you\u0027re in the right place. I\u0027m going to explain how to get past that error message and get your custom domain working with your Azure Container App whilst still using Bicep. It\u0027s going to get ugly. But it will work.",
+										"errors": [],
+										"begin": 62036,
+										"end": 63936
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 61617,
+													"end": 62009
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 61738,
+													"end": 61880
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 61836,
+													"end": 61876
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 61886,
+													"end": 62003
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 61617,
+										"end": 62009
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 60462,
+							"end": 64535
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 64535,
+										"end": 67801
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Azure Container Apps support Easy Auth. However, .NET applications run in ACAs do not recognise Easy Auth authentication. This post explains the issue and solves it.",
+										"errors": [],
+										"begin": 64645,
+										"end": 64850
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-facfbcdb151b42a982caa55673771963.png",
+										"errors": [],
+										"begin": 64850,
+										"end": 64968
+									},
+									{
+										"pred": "headline",
+										"value": "Azure Container Apps, Easy Auth and .NET authentication",
+										"errors": [],
+										"begin": 64976,
+										"end": 65166
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/azure-container-apps-easy-auth-and-dotnet-authentication",
+										"errors": [],
+										"begin": 65019,
+										"end": 65161
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-06-11T00:00:00+00:00",
+										"errors": [],
+										"begin": 65210,
+										"end": 65297
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 65562,
+										"end": 65671
+									},
+									{
+										"pred": "articleBody",
+										"value": "Easy Auth is a great way to authenticate your users. However, when used in the context of Azure Container Apps, .NET applications do not, by default, recognise that Easy Auth is in place. You might be authenticated but .NET will still act as if you aren\u0027t. builder.Services.AddAuthentication() and app.UseAuthentication() doesn\u0027t change that. This post explains the issue and solves it through the implementation of an AuthenticationHandler.",
+										"errors": [],
+										"begin": 66094,
+										"end": 66941
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 65675,
+													"end": 66067
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 65796,
+													"end": 65938
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 65894,
+													"end": 65934
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 65944,
+													"end": 66061
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 65675,
+										"end": 66067
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 64535,
+							"end": 67801
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 67801,
+										"end": 70980
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "You can deploy Bicep to Azure with the dedicated Azure DevOps task; however authentication to private Bicep registries is not supported.  This post shares a workaround.",
+										"errors": [],
+										"begin": 67911,
+										"end": 68119
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-b1eca5c7e68137b8d193bf8181039de0.png",
+										"errors": [],
+										"begin": 68119,
+										"end": 68237
+									},
+									{
+										"pred": "headline",
+										"value": "Private Bicep registry authentication with AzureResourceManagerTemplateDeployment@3",
+										"errors": [],
+										"begin": 68245,
+										"end": 68483
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/private-bicep-registry-authentication-azureresourcemanagertemplatedeployment",
+										"errors": [],
+										"begin": 68288,
+										"end": 68478
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-06-02T00:00:00+00:00",
+										"errors": [],
+										"begin": 68527,
+										"end": 68613
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 68878,
+										"end": 68987
+									},
+									{
+										"pred": "articleBody",
+										"value": "If you deploy Bicep templates to Azure in Azure DevOps, you\u0027ll likely use the dedicated Azure DevOps task; the catchily named AzureResourceManagerTemplateDeployment@3. This task has had support for deploying Bicep since early 2022. But whilst vanilla Bicep is supported, there\u0027s a use case which isn\u0027t supported; private Bicep registries.",
+										"errors": [],
+										"begin": 69410,
+										"end": 70368
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 68991,
+													"end": 69383
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 69112,
+													"end": 69254
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 69210,
+													"end": 69250
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 69260,
+													"end": 69377
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 68991,
+										"end": 69383
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 67801,
+							"end": 70980
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 70980,
+										"end": 73811
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "With Node.js 18, the Static Web Apps CLI fails to connect to the API - there is a way to fix this.",
+										"errors": [],
+										"begin": 71090,
+										"end": 71228
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-031d0022a4207916571018334832963d.png",
+										"errors": [],
+										"begin": 71228,
+										"end": 71346
+									},
+									{
+										"pred": "headline",
+										"value": "Static Web Apps CLI and Node.js 18: could not connect to API",
+										"errors": [],
+										"begin": 71354,
+										"end": 71545
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/static-web-apps-cli-node-18-could-not-connect-to-api",
+										"errors": [],
+										"begin": 71397,
+										"end": 71540
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-05-20T00:00:00+00:00",
+										"errors": [],
+										"begin": 71589,
+										"end": 71675
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 71940,
+										"end": 72049
+									},
+									{
+										"pred": "articleBody",
+										"value": "I make use of Azure Static Web Apps a lot. I recently upgraded to Node.js 18 and found that the Static Web Apps CLI no longer worked when trying to run locally; the API would not connect when running swa start: [swa] ❌ Could not connect to \"http://localhost:7071/\". Is the server up and running? This post shares a workaround.",
+										"errors": [],
+										"begin": 72472,
+										"end": 73224
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 72053,
+													"end": 72445
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 72174,
+													"end": 72316
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 72272,
+													"end": 72312
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 72322,
+													"end": 72439
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 72053,
+										"end": 72445
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 70980,
+							"end": 73811
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 73811,
+										"end": 76783
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "TypeScript deprecated tsconfig.json option \"importsNotUsedAsValues\": \"error\" in 5. You can make type imports explicit with CommonJS if you use ESLint consistent-type-imports.",
+										"errors": [],
+										"begin": 73921,
+										"end": 74155
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-be1079a13c4ed4213afb6c3bc59929f8.png",
+										"errors": [],
+										"begin": 74155,
+										"end": 74273
+									},
+									{
+										"pred": "headline",
+										"value": "TypeScript 5: importsNotUsedAsValues replaced by ESLint consistent-type-imports",
+										"errors": [],
+										"begin": 74281,
+										"end": 74511
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/typescript-5-importsnotusedasvalues-error-eslint-consistent-type-imports",
+										"errors": [],
+										"begin": 74324,
+										"end": 74506
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-05-09T00:00:00+00:00",
+										"errors": [],
+										"begin": 74555,
+										"end": 74640
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 74905,
+										"end": 75014
+									},
+									{
+										"pred": "articleBody",
+										"value": "I really like type imports that are unambiguous. For this reason, I\u0027ve made use of the \"importsNotUsedAsValues\": \"error\" option in tsconfig.json for a while now. This option has been deprecated in TypeScript 5.0.0, and will be removed in TypeScript 5.5.0. This post will look at what you can do instead.",
+										"errors": [],
+										"begin": 75437,
+										"end": 76173
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 75018,
+													"end": 75410
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 75139,
+													"end": 75281
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 75237,
+													"end": 75277
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 75287,
+													"end": 75404
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 75018,
+										"end": 75410
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 73811,
+							"end": 76783
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 76783,
+										"end": 79748
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Azure Functions can be written in JavaScript or TypeScript. This post will demonstrate how to migrate an Azure Function from JSDoc JavaScript to TypeScript.",
+										"errors": [],
+										"begin": 76893,
+										"end": 77089
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-5eea9bdd73ed508fa201183e5a711590.png",
+										"errors": [],
+										"begin": 77089,
+										"end": 77207
+									},
+									{
+										"pred": "headline",
+										"value": "Migrating Azure Functions from JSDoc JavaScript to TypeScript",
+										"errors": [],
+										"begin": 77215,
+										"end": 77416
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/migrating-azure-functions-from-jsdoc-javascript-to-typescript",
+										"errors": [],
+										"begin": 77258,
+										"end": 77411
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-05-08T00:00:00+00:00",
+										"errors": [],
+										"begin": 77460,
+										"end": 77545
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 77810,
+										"end": 77919
+									},
+									{
+										"pred": "articleBody",
+										"value": "I wrote previously about how to implement a dynamic redirect mechanism for Azure Static Web Apps using Azure Functions. I implemented this using JSDoc JavaScript. I\u0027ve since migrated this to TypeScript and I thought it would be interesting to share the process.",
+										"errors": [],
+										"begin": 78342,
+										"end": 79057
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 77923,
+													"end": 78315
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 78044,
+													"end": 78186
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 78142,
+													"end": 78182
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 78192,
+													"end": 78309
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 77923,
+										"end": 78315
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 76783,
+							"end": 79748
+						},
+						{
+							"pred": "blogPost",
+							"target": {
+								"types": [
+									{
+										"pred": "itemtype",
+										"value": "BlogPosting",
+										"errors": [],
+										"begin": 79748,
+										"end": 83694
+									}
+								],
+								"typeGroup": "BlogPosting",
+								"errors": [],
+								"properties": [
+									{
+										"pred": "description",
+										"value": "Teams does not have a public API for sending direct messages to people rather than channels. This post describes a workaround using Power Automate and the Teams Notification API.",
+										"errors": [],
+										"begin": 79858,
+										"end": 80076
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/assets/images/title-image-a6e4f918adb5839bf03ac87c472924d7.png",
+										"errors": [],
+										"begin": 80076,
+										"end": 80194
+									},
+									{
+										"pred": "headline",
+										"value": "Teams Direct Message API with Power Automate",
+										"errors": [],
+										"begin": 80202,
+										"end": 80352
+									},
+									{
+										"pred": "url",
+										"value": "https://thankful-sky-0bfc7e803-804.westeurope.1.azurestaticapps.net/ms-teams-direct-message-api",
+										"errors": [],
+										"begin": 80245,
+										"end": 80347
+									},
+									{
+										"pred": "datePublished",
+										"value": "2023-05-04T00:00:00+00:00",
+										"errors": [],
+										"begin": 80396,
+										"end": 80481
+									},
+									{
+										"pred": "image",
+										"value": "https://johnnyreilly.com/img/profile.jpg",
+										"errors": [],
+										"begin": 80747,
+										"end": 80856
+									},
+									{
+										"pred": "image",
+										"value": "https://avatars.githubusercontent.com/u/11404995?v\u003d4",
+										"errors": [],
+										"begin": 81451,
+										"end": 81578
+									},
+									{
+										"pred": "articleBody",
+										"value": "I\u0027ve written previously about sending Teams notifications using a webhook, and it\u0027s a technique I\u0027ve used a lot. But I\u0027ve always wanted to be able to send a direct message to a user, and that\u0027s not possible with the webhook approach. I work with a marvellous fellow named Chris Tacey-Green, and he\u0027s figured out a way to do this using Power Automate and the Teams Notification API. I\u0027m going to describe how he did it here, with a little help from him. It\u0027s probably worth saying, both Chris and I work for Investec, and we\u0027re going to share some of the things we\u0027ve learned about using Teams and Power Automate in the hope that it\u0027s useful to others. But we\u0027re not speaking on behalf of Investec, and we\u0027re not suggesting that this is the best way to do things. This is likely in the \"do things that do not scale\" category. Significantly though, it works! You will see some screenshots of our internal Teams environment, but we\u0027ve tried to keep them to a minimum, and we\u0027re not going to share any sensitive information.",
+										"errors": [],
+										"begin": 81979,
+										"end": 83470
+									}
+								],
+								"nodeProperties": [
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 80860,
+													"end": 81252
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://johnnyreilly.com/about",
+													"errors": [],
+													"begin": 80981,
+													"end": 81123
+												},
+												{
+													"pred": "name",
+													"value": "John Reilly",
+													"errors": [],
+													"begin": 81079,
+													"end": 81119
+												},
+												{
+													"pred": "description",
+													"value": "OSS Engineer - TypeScript, Azure, React, Node.js, .NET",
+													"errors": [],
+													"begin": 81129,
+													"end": 81246
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 80860,
+										"end": 81252
+									},
+									{
+										"pred": "author",
+										"target": {
+											"types": [
+												{
+													"pred": "itemtype",
+													"value": "Person",
+													"errors": [],
+													"begin": 81582,
+													"end": 81952
+												}
+											],
+											"typeGroup": "Person",
+											"errors": [],
+											"properties": [
+												{
+													"pred": "url",
+													"value": "https://github.com/ctaceygreen",
+													"errors": [],
+													"begin": 81703,
+													"end": 81851
+												},
+												{
+													"pred": "name",
+													"value": "Chris Tacey-Green",
+													"errors": [],
+													"begin": 81801,
+													"end": 81847
+												},
+												{
+													"pred": "description",
+													"value": "Engineer, Architect, Human",
+													"errors": [],
+													"begin": 81857,
+													"end": 81946
+												}
+											],
+											"nodeProperties": [],
+											"numErrors": 0,
+											"numWarnings": 0
+										},
+										"errors": [],
+										"begin": 81582,
+										"end": 81952
+									}
+								],
+								"numErrors": 0,
+								"numWarnings": 0
+							},
+							"errors": [],
+							"begin": 79748,
+							"end": 83694
+						}
+					],
+					"numErrors": 0,
+					"numWarnings": 0
+				}
+			],
+			"numNodesWithError": 0,
+			"numNodesWithWarning": 0,
+			"numErrors": 0,
+			"numWarnings": 0,
+			"type": "Blog"
+		}
+	],
+	"numObjects": 3,
+	"html": "<!-- html -->",
+	"errors": [
+		{
+			"ownerSet": { "SPORE": true },
+			"errorType": "INVALID_OBJECT",
+			"args": [
+				"copyrightHolder",
+				"Blarg",
+				"Organization,http://schema.org/Person,http://schema.org/Role,http://schema.org/Thing"
+			],
+			"begin": 4346,
+			"end": 4386,
+			"isSevere": true,
+			"errorID": 0,
+			"ownerToSeverity": { "SPORE": "ERROR" }
+		},
+		{
+			"ownerSet": { "SPORE": true },
+			"errorType": "INVALID_OBJECT",
+			"args": [
+				"publisher",
+				"Blarg",
+				"Organization,http://schema.org/Person,http://schema.org/Role,http://schema.org/Thing"
+			],
+			"begin": 4399,
+			"end": 4439,
+			"isSevere": true,
+			"errorID": 1,
+			"ownerToSeverity": { "SPORE": "ERROR" }
+		},
+		{
+			"ownerSet": { "SPORE": true },
+			"errorType": "INVALID_ITEMTYPE",
+			"args": ["Blarg"],
+			"begin": 4664,
+			"end": 5935,
+			"isSevere": true,
+			"errorID": 2,
+			"ownerToSeverity": { "SPORE": "ERROR" }
+		}
+	],
+	"totalNumErrors": 4,
+	"totalNumWarnings": 0
+}

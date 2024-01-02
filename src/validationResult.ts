@@ -9,6 +9,17 @@ const nodeTypeSchema = z.object({
 });
 // type NodeType = z.infer<typeof nodeTypeSchema>;
 
+const errorSchema = z.object({
+	ownerSet: z.object({ SPORE: z.boolean() }),
+	errorType: z.string(),
+	args: z.array(z.string()),
+	begin: z.number(),
+	end: z.number(),
+	isSevere: z.boolean(),
+	errorID: z.number(),
+	ownerToSeverity: z.object({ SPORE: z.string() }),
+});
+
 const baseNodePropertiesSchema = z.object({
 	pred: z.string(),
 	errors: z.unknown().array(),
@@ -29,7 +40,7 @@ const nodeSchema = z.object({
 	types: nodeTypeSchema.array(),
 	typeGroup: z.string(),
 	idProperty: nodeTypeSchema.optional(),
-	errors: z.unknown().array(),
+	errors: errorSchema.array(),
 	properties: nodeTypeSchema.array(),
 	nodeProperties: nodePropertiesSchema.array(),
 	numErrors: z.number(),
@@ -57,7 +68,7 @@ export const validationResultSchema = z.object({
 	numObjects: z.number(),
 	tripleGroups: tripleGroupSchema.array().optional(),
 	html: z.string().optional(),
-	errors: z.unknown().array().optional(),
+	errors: errorSchema.array().optional(),
 	totalNumErrors: z.number(),
 	totalNumWarnings: z.number(),
 });

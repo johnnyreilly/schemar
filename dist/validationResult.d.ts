@@ -58,7 +58,54 @@ declare const nodeSchema: z.ZodObject<{
         begin: number;
         end: number;
     }>>;
-    errors: z.ZodArray<z.ZodUnknown, "many">;
+    errors: z.ZodArray<z.ZodObject<{
+        ownerSet: z.ZodObject<{
+            SPORE: z.ZodBoolean;
+        }, "strip", z.ZodTypeAny, {
+            SPORE: boolean;
+        }, {
+            SPORE: boolean;
+        }>;
+        errorType: z.ZodString;
+        args: z.ZodArray<z.ZodString, "many">;
+        begin: z.ZodNumber;
+        end: z.ZodNumber;
+        isSevere: z.ZodBoolean;
+        errorID: z.ZodNumber;
+        ownerToSeverity: z.ZodObject<{
+            SPORE: z.ZodString;
+        }, "strip", z.ZodTypeAny, {
+            SPORE: string;
+        }, {
+            SPORE: string;
+        }>;
+    }, "strip", z.ZodTypeAny, {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }, {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }>, "many">;
     properties: z.ZodArray<z.ZodObject<{
         pred: z.ZodString;
         value: z.ZodString;
@@ -82,7 +129,20 @@ declare const nodeSchema: z.ZodObject<{
     numErrors: z.ZodNumber;
     numWarnings: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
-    errors: unknown[];
+    errors: {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }[];
     types: {
         pred: string;
         value: string;
@@ -109,7 +169,20 @@ declare const nodeSchema: z.ZodObject<{
         end: number;
     } | undefined;
 }, {
-    errors: unknown[];
+    errors: {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }[];
     types: {
         pred: string;
         value: string;
@@ -184,7 +257,54 @@ export declare const validationResultSchema: z.ZodObject<{
                 begin: number;
                 end: number;
             }>>;
-            errors: z.ZodArray<z.ZodUnknown, "many">;
+            errors: z.ZodArray<z.ZodObject<{
+                ownerSet: z.ZodObject<{
+                    SPORE: z.ZodBoolean;
+                }, "strip", z.ZodTypeAny, {
+                    SPORE: boolean;
+                }, {
+                    SPORE: boolean;
+                }>;
+                errorType: z.ZodString;
+                args: z.ZodArray<z.ZodString, "many">;
+                begin: z.ZodNumber;
+                end: z.ZodNumber;
+                isSevere: z.ZodBoolean;
+                errorID: z.ZodNumber;
+                ownerToSeverity: z.ZodObject<{
+                    SPORE: z.ZodString;
+                }, "strip", z.ZodTypeAny, {
+                    SPORE: string;
+                }, {
+                    SPORE: string;
+                }>;
+            }, "strip", z.ZodTypeAny, {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }, {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }>, "many">;
             properties: z.ZodArray<z.ZodObject<{
                 pred: z.ZodString;
                 value: z.ZodString;
@@ -208,7 +328,20 @@ export declare const validationResultSchema: z.ZodObject<{
             numErrors: z.ZodNumber;
             numWarnings: z.ZodNumber;
         }, "strip", z.ZodTypeAny, {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -235,7 +368,20 @@ export declare const validationResultSchema: z.ZodObject<{
                 end: number;
             } | undefined;
         }, {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -272,7 +418,20 @@ export declare const validationResultSchema: z.ZodObject<{
         numErrors: number;
         numWarnings: number;
         nodes: {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -307,7 +466,20 @@ export declare const validationResultSchema: z.ZodObject<{
         numErrors: number;
         numWarnings: number;
         nodes: {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -339,7 +511,54 @@ export declare const validationResultSchema: z.ZodObject<{
         ownerSet?: unknown;
     }>, "many">>;
     html: z.ZodOptional<z.ZodString>;
-    errors: z.ZodOptional<z.ZodArray<z.ZodUnknown, "many">>;
+    errors: z.ZodOptional<z.ZodArray<z.ZodObject<{
+        ownerSet: z.ZodObject<{
+            SPORE: z.ZodBoolean;
+        }, "strip", z.ZodTypeAny, {
+            SPORE: boolean;
+        }, {
+            SPORE: boolean;
+        }>;
+        errorType: z.ZodString;
+        args: z.ZodArray<z.ZodString, "many">;
+        begin: z.ZodNumber;
+        end: z.ZodNumber;
+        isSevere: z.ZodBoolean;
+        errorID: z.ZodNumber;
+        ownerToSeverity: z.ZodObject<{
+            SPORE: z.ZodString;
+        }, "strip", z.ZodTypeAny, {
+            SPORE: string;
+        }, {
+            SPORE: string;
+        }>;
+    }, "strip", z.ZodTypeAny, {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }, {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }>, "many">>;
     totalNumErrors: z.ZodNumber;
     totalNumWarnings: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
@@ -354,7 +573,20 @@ export declare const validationResultSchema: z.ZodObject<{
         numErrors: number;
         numWarnings: number;
         nodes: {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -386,7 +618,20 @@ export declare const validationResultSchema: z.ZodObject<{
         ownerSet?: unknown;
     }[] | undefined;
     html?: string | undefined;
-    errors?: unknown[] | undefined;
+    errors?: {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }[] | undefined;
 }, {
     isRendered: boolean;
     numObjects: number;
@@ -399,7 +644,20 @@ export declare const validationResultSchema: z.ZodObject<{
         numErrors: number;
         numWarnings: number;
         nodes: {
-            errors: unknown[];
+            errors: {
+                begin: number;
+                end: number;
+                ownerSet: {
+                    SPORE: boolean;
+                };
+                errorType: string;
+                args: string[];
+                isSevere: boolean;
+                errorID: number;
+                ownerToSeverity: {
+                    SPORE: string;
+                };
+            }[];
             types: {
                 pred: string;
                 value: string;
@@ -431,7 +689,20 @@ export declare const validationResultSchema: z.ZodObject<{
         ownerSet?: unknown;
     }[] | undefined;
     html?: string | undefined;
-    errors?: unknown[] | undefined;
+    errors?: {
+        begin: number;
+        end: number;
+        ownerSet: {
+            SPORE: boolean;
+        };
+        errorType: string;
+        args: string[];
+        isSevere: boolean;
+        errorID: number;
+        ownerToSeverity: {
+            SPORE: string;
+        };
+    }[] | undefined;
 }>;
 export type ValidationResultRaw = z.infer<typeof validationResultSchema>;
 export type ValidationResult = Omit<{
