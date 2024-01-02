@@ -16,14 +16,16 @@ This action works by:
 1. Checking the supplied URL features structured data using the [Schema.org validator](https://validator.schema.org/)
 2. If no structured data is found, the action fails. It also fails if the structured data is invalid.
 
+For a single URL:
+
 ```yml
 jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: johnnyreilly/schemar@v0.1.0
-	  	with:
-		  urls: https://johnnyreilly.com
+      - uses: johnnyreilly/schemar@v0.1.1
+        with:
+          urls: https://johnnyreilly.com
 
 name: Validate structured data
 
@@ -33,6 +35,30 @@ on:
     branches:
       - main
 ```
+
+For multiple URLs:
+
+```yml
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: johnnyreilly/schemar@v0.1.1
+        with:
+          urls: |
+            https://johnnyreilly.com
+            https://johnnyreilly.com/about
+
+name: Validate structured data
+
+on:
+  pull_request: ~
+  push:
+    branches:
+      - main
+```
+
+To read more details about this GitHub Action and how to use it, please see [this blog post](https://johnnyreilly.com/schemar-validate-structured-data-in-a-github-action).
 
 ## Development
 
