@@ -80,11 +80,11 @@ declare const nodeSchema: z.ZodObject<{
             SPORE: string;
         }>;
     }, "strip", z.ZodTypeAny, {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -93,11 +93,11 @@ declare const nodeSchema: z.ZodObject<{
             SPORE: string;
         };
     }, {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -130,11 +130,11 @@ declare const nodeSchema: z.ZodObject<{
     numWarnings: z.ZodNumber;
 }, "strip", z.ZodTypeAny, {
     errors: {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -170,11 +170,11 @@ declare const nodeSchema: z.ZodObject<{
     } | undefined;
 }, {
     errors: {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -279,11 +279,11 @@ export declare const validationResultSchema: z.ZodObject<{
                     SPORE: string;
                 }>;
             }, "strip", z.ZodTypeAny, {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -292,11 +292,11 @@ export declare const validationResultSchema: z.ZodObject<{
                     SPORE: string;
                 };
             }, {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -329,11 +329,11 @@ export declare const validationResultSchema: z.ZodObject<{
             numWarnings: z.ZodNumber;
         }, "strip", z.ZodTypeAny, {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -369,11 +369,11 @@ export declare const validationResultSchema: z.ZodObject<{
             } | undefined;
         }, {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -419,11 +419,11 @@ export declare const validationResultSchema: z.ZodObject<{
         numWarnings: number;
         nodes: {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -467,11 +467,11 @@ export declare const validationResultSchema: z.ZodObject<{
         numWarnings: number;
         nodes: {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -533,11 +533,11 @@ export declare const validationResultSchema: z.ZodObject<{
             SPORE: string;
         }>;
     }, "strip", z.ZodTypeAny, {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -546,11 +546,11 @@ export declare const validationResultSchema: z.ZodObject<{
             SPORE: string;
         };
     }, {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -574,11 +574,11 @@ export declare const validationResultSchema: z.ZodObject<{
         numWarnings: number;
         nodes: {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -619,11 +619,11 @@ export declare const validationResultSchema: z.ZodObject<{
     }[] | undefined;
     html?: string | undefined;
     errors?: {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;
@@ -645,11 +645,11 @@ export declare const validationResultSchema: z.ZodObject<{
         numWarnings: number;
         nodes: {
             errors: {
-                begin: number;
-                end: number;
                 ownerSet: {
                     SPORE: boolean;
                 };
+                begin: number;
+                end: number;
                 errorType: string;
                 args: string[];
                 isSevere: boolean;
@@ -690,11 +690,11 @@ export declare const validationResultSchema: z.ZodObject<{
     }[] | undefined;
     html?: string | undefined;
     errors?: {
-        begin: number;
-        end: number;
         ownerSet: {
             SPORE: boolean;
         };
+        begin: number;
+        end: number;
         errorType: string;
         args: string[];
         isSevere: boolean;

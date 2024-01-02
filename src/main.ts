@@ -3,7 +3,6 @@ import {
 	processValidationResult,
 	processValidationResponse,
 	getValidationResponse,
-	seeMoreMaker,
 } from "./validate.js";
 import type { Result } from "./validationResult.js";
 

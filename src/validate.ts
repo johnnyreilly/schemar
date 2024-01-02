@@ -128,7 +128,7 @@ ${seeMore}
 	};
 }
 
-export function seeMoreMaker(url: string) {
+function seeMoreMaker(url: string) {
 	return `For more details see https://validator.schema.org/#url=${encodeURIComponent(
 		url,
 	)}`;
